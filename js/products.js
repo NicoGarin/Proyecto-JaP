@@ -1,15 +1,35 @@
 //Función que se ejecuta una vez que se haya lanzado el evento de
 //que el documento se encuentra cargado, es decir, se encuentran todos los
 //elementos HTML presentes.
+var listadoProductos = [];
+
 document.addEventListener("DOMContentLoaded", function (e) {
-    let data = getJSONData(PRODUCTS_URL);
-    let row = "";
-
-    row = ` 
-        <tr>
-        <td>`  + data[0].name + ` </td>
-        </tr>
-        ` ;
-
-    document.getElementById("info").innerHTML += row;
+    getJSONData(AUTOS_URL).then(function (objeto) {
+        if (objeto.status === "ok") {
+            listadoProductos = objeto.data;
+        } else {
+            alert(objeto.status);
+        }
+        mostrarProductos(listadoProductos)
+    }
+    )
 })
+
+function mostrarProductos(array) {
+    for (let i = 0; i < array.length;i++) {
+
+        let row = "";
+
+        row = ` 
+            <tr>
+                <td class="tablaproductos">`  + array[i].name + ` </td>
+                <td class="tablaproductos">`  + array[i].description + ` </td>
+                <td class="tablaproductos">`  + array[i].cost + ` </td>
+                <td class="tablaproductos">`  + array[i].currency + ` </td>
+                <td class="tablaproductos"><img style="width:200px"; src=`  + array[i].imgSrc + `> </td>
+            </tr>
+            ` ;
+        document.getElementById("info").innerHTML += row;
+    }
+}
+

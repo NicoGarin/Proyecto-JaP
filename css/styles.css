@@ -139,3 +139,17 @@ a.custom-card:hover {
 .checked {
   color: orange;
 }
+
+.tablaproductos {
+    border: 1px  solid;
+    width: 200px;
+    text-align: center;
+    background-color: rgb(138, 126, 252);
+    color: white;
+    border-radius: 20px;
+}
+
+#tabprod {
+  margin-left: auto;
+  margin-right: auto;    
+}
