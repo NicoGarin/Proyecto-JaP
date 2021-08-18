@@ -7,8 +7,8 @@ const CART_INFO_URL = "https://japdevdep.github.io/ecommerce-api/cart/987.json";
 const CART_BUY_URL = "https://japdevdep.github.io/ecommerce-api/cart/buy.json";
 //Urls de Jsons de las diferentes categorías
 const AUTOS_URL = "https://japdevdep.github.io/ecommerce-api/product/all.json";
-const HERRAMIENTAS_URL = aa
-const DEPORTE_URL = AA
+const HERRAMIENTAS_URL = "jsons/herramientas.json";
+const DEPORTE_URL ="https://nicolasgarin.gothub.io/jsons/deporte.json";
 
 
 var showSpinner = function(){

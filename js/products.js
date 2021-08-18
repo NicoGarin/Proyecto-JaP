@@ -33,3 +33,28 @@ function mostrarProductos(array) {
     }
 }
 
+function categorysetter(option) {
+    let actualcat = option.value;
+    if (actualcat === 1) {
+        getJSONData(AUTOS_URL).then(function (objeto) {
+            if (objeto.status === "ok") {
+                listadoProductos = objeto.data;
+            } else {
+                alert(objeto.status);
+            }
+            mostrarProductos(listadoProductos)
+        }
+        )
+    }else if (actualcat === 2) {
+        getJSONData(DEPORTE_URL).then(function (objeto) {
+            if (objeto.status === "ok") {
+                listadoProductos = objeto.data;
+            } else {
+                alert(objeto.status);
+            }
+            mostrarProductos(listadoProductos)
+        }
+        )
+    }
+}
+

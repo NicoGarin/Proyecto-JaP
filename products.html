@@ -25,19 +25,18 @@
     </nav>
     <br>
     <div style="margin-left: 12%;">
-      <label for="categoriaactual">Seleccione la categoría deseada</label>
-      <input list="cats" name="categoriaactual" id="categoriaactual">
-      <datalist id="cats">
-        <option value="Autos"></option>
-        <option value="Celulares"></option>
-        <option value="Computadoras"></option>
-        <option value="Deporte"></option>
-        <option value="Electrodomésticos"></option>
-        <option value="Herramientas"></option>
-        <option value="Juguetes"></option>
-        <option value="Muebles"></option>
-        <option value="Vestimenta"></option>
-      </datalist>
+      <select id="cats" onchange="categorysetter(this)">
+        <option disabled selected>Selecciona una categoría</option>
+        <option value="1">Autos</option>
+        <option value="2">Celulares</option>
+        <option value="3">Computadoras</option>
+        <option value="4">Deporte</option>
+        <option value="5">Electrodomésticos</option>
+        <option value="6">Herramientas</option>
+        <option value="7">Juguetes</option>
+        <option value="8">Muebles</option>
+        <option value="9">Vestimenta</option>
+      </select>
     </div>
     <div class="container p-5">
       <div class="alert alert-danger" id="cuadrito" role="alert" style="position: relative; width:auto; top: 0;">

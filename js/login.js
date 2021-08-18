@@ -4,3 +4,7 @@
 document.addEventListener("DOMContentLoaded", function(e){
 
 });
+
+function login() {
+    window.location.href="homepage.html";
+}

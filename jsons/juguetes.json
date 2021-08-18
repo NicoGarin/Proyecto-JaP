@@ -1,0 +1,26 @@
+[
+    {
+        "name":"Pelota de fútbol N°5",
+        "description":"Pelota oficial Nike",
+        "cost":"320",
+        "currency":"$",
+        "imgSrc":"img/jug1",
+        "countsold":"22"
+        },
+        {
+        "name":"Balero clásico de madera",
+        "description":"Un clásico! Para toda la familia! Por un ratito dejar el Play, el XBox, la tablet, la compu... jugar al aire libre un juego para desarrollar destreza y paciencia...Fabricado en madera maciza.",
+        "cost":"290",
+        "currency":"$",
+        "imgSrc":"img/jug2",
+        "countsold":"66"
+        },
+        {
+        "name":"Muñeca de trapo",
+        "description":"Muñeca de trapo grande para niños o niñas",
+        "cost":"880",
+        "currency":"$",
+        "imgSrc":"img/jug3",
+        "countsold":"36"
+        }
+]
