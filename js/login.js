@@ -10,13 +10,10 @@ document.addEventListener("DOMContentLoaded", function(e){
         } else {
             alert(objeto.status);
         }
-});
-alert(usuarios_habilitados[0].user)
-}
-)
+    });
+})
 
 
 function login() {
-
-    window.location.href="homepage.html";
+    alert(usuarios_habilitados[0].password)
 }
