@@ -5,16 +5,17 @@ const PRODUCT_INFO_URL = "https://japdevdep.github.io/ecommerce-api/product/5678
 const PRODUCT_INFO_COMMENTS_URL = "https://japdevdep.github.io/ecommerce-api/product/5678-comments.json";
 const CART_INFO_URL = "https://japdevdep.github.io/ecommerce-api/cart/987.json";
 const CART_BUY_URL = "https://japdevdep.github.io/ecommerce-api/cart/buy.json";
+const USUARIOS_URL = "https://nicolasgarin.github.io/Proyecto-JaP/jsons/usuarios.json";
 //Urls de Jsons de las diferentes categorías
 const AUTOS_URL = "https://japdevdep.github.io/ecommerce-api/product/all.json";
-const HERRAMIENTAS_URL = "https://nicolasgarin.gothub.io/jsons/herramientas.json";
-const DEPORTE_URL ="https://nicolasgarin.gothub.io/jsons/deporte.json";
-const VESTIMENTA_URL ="https://nicolasgarin.gothub.io/jsons/vestimenta.json";
-const MUEBLES_URL ="https://nicolasgarin.gothub.io/jsons/muebles.json";
-const COMPUTADORAS_URL ="https://nicolasgarin.gothub.io/jsons/computadoras.json";
-const ELECTRODOMESTICOS_URL ="https://nicolasgarin.gothub.io/jsons/electrodomesticos.json";
-const JUGUETES_URL ="https://nicolasgarin.gothub.io/jsons/juguetes.json";
-const CELULARES_URL ="https://nicolasgarin.gothub.io/jsons/celulares.json";
+const HERRAMIENTAS_URL = "https://nicolasgarin.github.io/Proyecto-JaP/jsons/herramientas.json";
+const DEPORTE_URL ="https://nicolasgarin.github.io/Proyecto-JaP/jsons/deporte.json";
+const VESTIMENTA_URL ="https://nicolasgarin.github.io/Proyecto-JaP/jsons/vestimenta.json";
+const MUEBLES_URL ="https://nicolasgarin.github.io/Proyecto-JaP/jsons/muebles.json";
+const COMPUTADORAS_URL ="https://nicolasgarin.github.io/Proyecto-JaP/jsons/computadoras.json";
+const ELECTRODOMESTICOS_URL ="https://nicolasgarin.github.io/Proyecto-JaP/jsons/electrodomesticos.json";
+const JUGUETES_URL ="https://nicolasgarin.github.io/Proyecto-JaP/jsons/juguetes.json";
+const CELULARES_URL ="https://nicolasgarin.github.io/Proyecto-JaP/jsons/celulares.json";
 
 
 var showSpinner = function(){

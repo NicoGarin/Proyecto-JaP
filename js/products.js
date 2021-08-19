@@ -2,18 +2,18 @@
 //que el documento se encuentra cargado, es decir, se encuentran todos los
 //elementos HTML presentes.
 var listadoProductos = [];
-
-document.addEventListener("DOMContentLoaded", function (e) {
-    getJSONData(AUTOS_URL).then(function (objeto) {
-        if (objeto.status === "ok") {
-            listadoProductos = objeto.data;
-        } else {
-            alert(objeto.status);
-        }
-        mostrarProductos(listadoProductos)
-    }
-    )
-})
+var URLS = ["elem0","AUTOS_URL","CELULARES_URL","COMPUTADORAS_URL","DEPORTE_URL","ELECTRODOMESTICOS_URL","HERRAMIENTAS_URL","JUGUETES_URL","MUEBLES_URL","VESTIMENTA_URL"]
+//document.addEventListener("DOMContentLoaded", function (e) {
+//    getJSONData(AUTOS_URL).then(function (objeto) {
+//        if (objeto.status === "ok") {
+//            listadoProductos = objeto.data;
+//        } else {
+//            alert(objeto.status);
+//        }
+//        mostrarProductos(listadoProductos)
+//    }
+//    )
+//})
 
 function mostrarProductos(array) {
     for (let i = 0; i < array.length;i++) {
@@ -34,8 +34,8 @@ function mostrarProductos(array) {
 }
 
 function categorysetter(option) {
-    let actualcat = option.value;
-    if (actualcat === 1) {
+    document.getElementById("info").innerHTML = "";
+    if (option == 1) {
         getJSONData(AUTOS_URL).then(function (objeto) {
             if (objeto.status === "ok") {
                 listadoProductos = objeto.data;
@@ -45,7 +45,7 @@ function categorysetter(option) {
             mostrarProductos(listadoProductos)
         }
         )
-    }else if (actualcat === 2) {
+    }else if (option == 2) {
         getJSONData(CELULARES_URL).then(function (objeto) {
             if (objeto.status === "ok") {
                 listadoProductos = objeto.data;
@@ -55,7 +55,7 @@ function categorysetter(option) {
             mostrarProductos(listadoProductos)
         }
         )
-    }else if (actualcat === 3) {
+    }else if (option == 3) {
         getJSONData(COMPUTADORAS_URL).then(function (objeto) {
             if (objeto.status === "ok") {
                 listadoProductos = objeto.data;
@@ -65,7 +65,7 @@ function categorysetter(option) {
             mostrarProductos(listadoProductos)
         }
         )
-    }else if (actualcat === 4) {
+    }else if (option == 4) {
         getJSONData(DEPORTE_URL).then(function (objeto) {
             if (objeto.status === "ok") {
                 listadoProductos = objeto.data;
@@ -75,7 +75,7 @@ function categorysetter(option) {
             mostrarProductos(listadoProductos)
         }
         )
-    }else if (actualcat === 5) {
+    }else if (option == 5) {
         getJSONData(ELECTRODOMESTICOS_URL).then(function (objeto) {
             if (objeto.status === "ok") {
                 listadoProductos = objeto.data;
@@ -85,7 +85,7 @@ function categorysetter(option) {
             mostrarProductos(listadoProductos)
         }
         )
-    }else if (actualcat === 6) {
+    }else if (option == 6) {
         getJSONData(HERRAMIENTAS_URL).then(function (objeto) {
             if (objeto.status === "ok") {
                 listadoProductos = objeto.data;
@@ -95,7 +95,7 @@ function categorysetter(option) {
             mostrarProductos(listadoProductos)
         }
         )
-    }else if (actualcat === 7) {
+    }else if (option == 7) {
         getJSONData(JUGUETES_URL).then(function (objeto) {
             if (objeto.status === "ok") {
                 listadoProductos = objeto.data;
@@ -105,7 +105,7 @@ function categorysetter(option) {
             mostrarProductos(listadoProductos)
         }
         )
-    }else if (actualcat === 8) {
+    }else if (option == 8) {
         getJSONData(MUEBLES_URL).then(function (objeto) {
             if (objeto.status === "ok") {
                 listadoProductos = objeto.data;
@@ -127,4 +127,3 @@ function categorysetter(option) {
         )
     }
 }
-    
