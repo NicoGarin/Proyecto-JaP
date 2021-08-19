@@ -1,0 +1,19 @@
+[
+    {
+        "name": "6ES7718-1CC02-2AA1 Siemens",
+        "description": "SIMATIC Field PG M6 Advanced; i7-8850H (2.6 a 4.3 GHz; 6 kernels + Hyper-Threading; caché inteligente de 9 MB); Pantalla de 15,6 ; Full HD (1920 x 1080); WLAN 802.11ac y Bluetooth V5.0; DVD +/- RW; UHD Graphics 630; 1x 32 GB DDR4 SD-RAM SO-DIMM",
+        "cost": 335,
+        "currency": "USD",
+        "imgSrc": "img/comp1.jpg",
+        "soldCount": 7
+    },
+    {
+        "name": "Notebook Lenovo",
+        "description": "Sistema Operativo: Microsoft Windows 10 Home 64bit, Procesador: Intel Core i5-1035G1, Ram: 8GB DDR4, Almacenamiento: SSD 512GB M.2, Pantalla: LED IPS 14 pulgadas Full HD 1920x1080, GPU: Intel UHD Graphics",
+        "cost": 300,
+        "currency": "USD",
+        "imgSrc": "img/comp2.jpg",
+        "soldCount": 12
+    }
+
+]

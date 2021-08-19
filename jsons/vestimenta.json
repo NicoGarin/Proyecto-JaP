@@ -1,0 +1,26 @@
+[
+    {
+        "name": "LEVI'S SLIM FIT JEANS ADV",
+        "description": "Ajustado pero con espacio para moverse, el 511™ Slim Fit sigue siendo uno de nuestros clásicos de siempre.",
+        "cost": 3790,
+        "currency": "$",
+        "imgSrc": "img/vest1.jpg",
+        "soldCount": 56
+    },
+    {
+        "name": "CAMPERA PIG SKIN",
+        "description": "Campera en Cuero Porcino (Pecari).",
+        "cost": 1990,
+        "currency": "$",
+        "imgSrc": "img/vest2.jpg",
+        "soldCount": 56
+    },
+    {
+        "name": "Champion New Balance ML574EM2",
+        "description": "Champion New Balance ML574EM2.",
+        "cost": 4256,
+        "currency": "$",
+        "imgSrc": "img/vest3.jpg",
+        "soldCount": 66
+    }
+]
