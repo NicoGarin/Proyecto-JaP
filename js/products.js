@@ -32,7 +32,7 @@ function mostrarProductos(array) {
         document.getElementById("info").innerHTML += row;
     }
 }
-
+//Trabajarlo con un switch
 function categorysetter(option) {
     document.getElementById("info").innerHTML = "";
     if (option == 1) {

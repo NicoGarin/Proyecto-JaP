@@ -4,7 +4,7 @@
     "description":"Un clásico! Para jugar a la viborita o utilizar su novedosa linterna.",
     "cost":"300",
     "currency":"$",
-    "imgSrc":"img/cel1",
+    "imgSrc":"img/cel1.jpg",
     "countsold":"120"
     },
     {
@@ -12,7 +12,7 @@
     "description":"Indestructible teléfono que te durará hasta el fin de tus días.",
     "cost":"100",
     "currency":"$",
-    "imgSrc":"img/cel2",
+    "imgSrc":"img/cel2.jpg",
     "countsold":"1020"
     },
     {
@@ -20,7 +20,7 @@
     "description":"PROCESADOR: Apple A10 - Quad-core, MEMORIA: 128GB, RAM: 2GB RAM, PANTALLA: 4.7",
     "cost":"247",
     "currency":"USD",
-    "imgSrc":"img/cel3",
+    "imgSrc":"img/cel3.jpg",
     "countsold":"30"
     },
     {
@@ -28,7 +28,7 @@
     "description":"El Huawei Y8s aparece listado en la página web de Huawei, aunque no hay por el momento información sobre su disponibilidad. Lo que sí se indica es una única versión de 4 + 64 GB y la disponibilidad en dos colores: negro y verde.",
     "cost":"230",
     "currency":"USD",
-    "imgSrc":"img/cel4",
+    "imgSrc":"img/cel4.jpg",
     "countsold":"1020"
     }
 ]
