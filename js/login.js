@@ -1,19 +1,19 @@
 //Función que se ejecuta una vez que se haya lanzado el evento de
 //que el documento se encuentra cargado, es decir, se encuentran todos los
 //elementos HTML presentes.
-var usuarios_habilitados = [];
-
 document.addEventListener("DOMContentLoaded", function(e){
 })
 
-
 function login() {
-    getJSONData(USUARIOS_URL).then(function (objeto) {
-        if (objeto.status === "ok") {
-            usuarios_habilitados = objeto.data;
-        } else {
-            alert(objeto.status);
-        }
-    })
-    alert(usuarios_habilitados[0].user)
+    let useringresado = document.getElementById("email").value;
+    let passingresada = document.getElementById("password").value;
+    if (useringresado === "" && passingresada === "") {
+        alert("Debes completar los campos");
+    } else if (useringresado === "" && passingresada !== "") {
+        alert("Debes ingresar tu usuario");
+    } else if  (useringresado !== "" && passingresada === "") {
+        alert("Debes ingresar tu contraseña");
+    } else {
+        window.location.href="homepage.html";
+    }
 }

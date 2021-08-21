@@ -2,7 +2,6 @@
 //que el documento se encuentra cargado, es decir, se encuentran todos los
 //elementos HTML presentes.
 var listadoProductos = [];
-var URLS = ["elem0","AUTOS_URL","CELULARES_URL","COMPUTADORAS_URL","DEPORTE_URL","ELECTRODOMESTICOS_URL","HERRAMIENTAS_URL","JUGUETES_URL","MUEBLES_URL","VESTIMENTA_URL"]
 //document.addEventListener("DOMContentLoaded", function (e) {
 //    getJSONData(AUTOS_URL).then(function (objeto) {
 //        if (objeto.status === "ok") {
