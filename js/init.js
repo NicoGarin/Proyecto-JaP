@@ -55,4 +55,22 @@ var getJSONData = function(url){
 //que el documento se encuentra cargado, es decir, se encuentran todos los
 //elementos HTML presentes.
 document.addEventListener("DOMContentLoaded", function(e){
+  let user_log = localStorage.getItem("User_logueado");
+  let cuadro_log = document.getElementById("Userlogged");
+  let user = document.getElementById("username");
+
+  if (user_log) {
+    user_loged = JSON.parse(user_log);
+    cuadro_log.innerHTML = "Usuario: " + user_loged.user;
+    cuadro_log.style = "display: inline-block;color: white;"
+    document.getElementById("salir").style = "display: inline-block";         
+  }
+
+  if (document.getElementById("salir")) {
+    document.getElementById("salir").addEventListener("click",function(){
+      localStorage.removeItem("User_logueado");
+      window.location = "index.html"
+    }
+    )
+  }
 });
