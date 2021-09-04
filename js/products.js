@@ -31,7 +31,7 @@ document.getElementById("rangoprecio").addEventListener("click", function (e) {
         sort = "soldcount";
     }
 
-    if ((preciomin != undefined) && (preciomin != "") && (parseInt(preciomin)) >= 0) {
+    if ((preciomin != undefined) && (preciomin != "") && (parseInt(preciomin)) >= 0) { //se establece rango de precio
         preciomin = parseInt(preciomin);
     } else {
         preciomin = undefined;
@@ -397,7 +397,7 @@ function mostrarProductos(array) {
         }
     }
 }
-//Trabajarlo con un switch
+
 function categorysetter(option) {
     document.getElementById("prod-list-container").innerHTML = "";
     if (option == 1) {
