@@ -5,7 +5,8 @@
         "cost": 335,
         "currency": "$",
         "imgSrc": "img/depo1.jpg",
-        "soldCount": 122
+        "soldCount": 122,
+        "id":7
     },
     {
         "name": "Pelota de pilates",
@@ -13,7 +14,8 @@
         "cost": 475,
         "currency": "$",
         "imgSrc": "img/depo2.jpg",
-        "soldCount": 35
+        "soldCount": 35,
+        "id":8
     },
     {
         "name": "Pesa rusa 8k",
@@ -21,6 +23,7 @@
         "cost": 760,
         "currency": "$",
         "imgSrc": "img/depo3.jpg",
-        "soldCount": 55
+        "soldCount": 55,
+        "id":9
     }
 ]

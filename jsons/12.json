@@ -1,0 +1,9 @@
+{
+    "name": "Martillo Deve",
+    "description": "Martillo cabezal de hierro con uña y mango de fibra.",
+    "cost": 300,
+    "currency": "$",
+    "soldCount": 44,
+    "category":"Herramientas",
+    "images":""
+}

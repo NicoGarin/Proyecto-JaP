@@ -5,7 +5,8 @@
     "cost":"300",
     "currency":"$",
     "imgSrc":"img/cel1.jpg",
-    "soldCount":120
+    "soldCount":120,
+    "id":1
     },
     {
     "name":"Motorola C115",
@@ -13,7 +14,8 @@
     "cost":"100",
     "currency":"$",
     "imgSrc":"img/cel2.jpg",
-    "soldCount":1020
+    "soldCount":1020,
+    "id":2
     },
     {
     "name":"Celular Iphone 7 128GB",
@@ -21,7 +23,8 @@
     "cost":"247",
     "currency":"USD",
     "imgSrc":"img/cel3.jpg",
-    "soldCount":30
+    "soldCount":30,
+    "id":3
     },
     {
     "name":"Huawei 8Y",
@@ -29,7 +32,8 @@
     "cost":"230",
     "currency":"USD",
     "imgSrc":"img/cel4.jpg",
-    "soldCount":800
+    "soldCount":800,
+    "id":4
     }
 ]
     

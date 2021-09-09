@@ -5,7 +5,8 @@
         "cost":"320",
         "currency":"$",
         "imgSrc":"img/jug1.jpg",
-        "soldCount":"22"
+        "soldCount":"22",
+        "id":16
         },
         {
         "name":"Balero clásico de madera",
@@ -13,7 +14,8 @@
         "cost":"290",
         "currency":"$",
         "imgSrc":"img/jug2.jpg",
-        "soldCount":"66"
+        "soldCount":"66",
+        "id":17
         },
         {
         "name":"Muñeca de trapo",
@@ -21,6 +23,7 @@
         "cost":"880",
         "currency":"$",
         "imgSrc":"img/jug3.jpg",
-        "soldCount":"36"
+        "soldCount":"36",
+        "id":18
         }
 ]

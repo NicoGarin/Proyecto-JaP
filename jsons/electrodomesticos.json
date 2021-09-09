@@ -5,7 +5,8 @@
         "cost": 94,
         "currency": "USD",
         "imgSrc": "img/elec1.jpg",
-        "soldCount": 88
+        "soldCount": 88,
+        "id":10
     },
     {
         "name": "Heladera James frío seco Inverter",
@@ -13,6 +14,7 @@
         "cost": 908,
         "currency": "USD",
         "imgSrc": "img/elec2.jpg",
-        "soldCount": 35
+        "soldCount": 35,
+        "id":11
     }
 ]

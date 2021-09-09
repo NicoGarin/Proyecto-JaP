@@ -5,7 +5,8 @@
         "cost": 335,
         "currency": "USD",
         "imgSrc": "img/comp1.jpg",
-        "soldCount": 7
+        "soldCount": 7,
+        "id":5
     },
     {
         "name": "Notebook Lenovo",
@@ -13,7 +14,8 @@
         "cost": 300,
         "currency": "USD",
         "imgSrc": "img/comp2.jpg",
-        "soldCount": 12
+        "soldCount": 12,
+        "id":6
     }
 
 ]

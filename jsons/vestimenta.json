@@ -5,7 +5,8 @@
         "cost": 3790,
         "currency": "$",
         "imgSrc": "img/vest1.jpg",
-        "soldCount": 56
+        "soldCount": 56,
+        "id":22
     },
     {
         "name": "CAMPERA PIG SKIN",
@@ -13,7 +14,8 @@
         "cost": 1990,
         "currency": "$",
         "imgSrc": "img/vest2.jpg",
-        "soldCount": 90
+        "soldCount": 90,
+        "id":23
     },
     {
         "name": "Champion New Balance ML574EM2",
@@ -21,6 +23,7 @@
         "cost": 4256,
         "currency": "$",
         "imgSrc": "img/vest3.jpg",
-        "soldCount": 66
+        "soldCount": 66,
+        "id":24
     }
 ]

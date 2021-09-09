@@ -31,7 +31,7 @@ document.getElementById("rangoprecio").addEventListener("click", function (e) {
         sort = "soldcount";
     }
 
-    if ((preciomin != undefined) && (preciomin != "") && (parseInt(preciomin)) >= 0) { //se establece rango de precio
+    if ((preciomin != undefined) && (preciomin != "") && (parseInt(preciomin)) >= 0) { //se establece undefined
         preciomin = parseInt(preciomin);
     } else {
         preciomin = undefined;
@@ -70,20 +70,21 @@ function mostrarProductos(array) {
                     ((preciomax == undefined) || (preciomax != undefined && newarray[i].cost <= preciomax))) {
 
                     row = ` 
-        <div class="row">
-        <div class="col-3">
-            <img src="` + newarray[i].imgSrc + `" alt="` + newarray[i].description + `" class="img-thumbnail">
-        </div>
-        <div class="col">
-            <div class="d-flex w-100 justify-content-between">
-                <h4 class="mb-1">`+ newarray[i].name + `</h4>
-                <small class="text-muted">` + newarray[i].soldCount + ` artículos</small>
-            </div>
-            <p class="mb-1">` + newarray[i].description + `</p>
-            <h6 class="mb-1">` + newarray[i].currency + ` ` + newarray[i].cost + `</h6>
-        </div>
-    </div><hr>
-            ` ;
+                <div class="row">
+                    <div class="col-3">
+                        <img src="` + newarray[i].imgSrc + `" alt="` + newarray[i].description + `" class="img-thumbnail">
+                    </div>
+                    <div class="col">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h4 class="mb-1">`+ newarray[i].name + `</h4>
+                            <small class="text-muted">` + newarray[i].soldCount + ` artículos</small>
+                        </div>
+                        <p class="mb-1">` + newarray[i].description + `</p>
+                        <h6 class="mb-1">` + newarray[i].currency + ` ` + newarray[i].cost + `</h6>
+                        <br><button onclick="verproducto(${newarray[i].id})">Ver Info</button>
+                    </div>
+                </div><hr>
+                        ` ;
                     document.getElementById("prod-list-container").innerHTML += row;
                 }
 
@@ -491,4 +492,9 @@ function categorysetter(option) {
         }
         )
     }
+}
+
+function verproducto(id) {
+    localStorage.setItem("Producto",JSON.stringify({productId: id}));
+    window.location = "product-info.html";
 }

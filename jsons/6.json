@@ -1,0 +1,9 @@
+{
+    "name": "Notebook Lenovo",
+    "description": "Sistema Operativo: Microsoft Windows 10 Home 64bit, Procesador: Intel Core i5-1035G1, Ram: 8GB DDR4, Almacenamiento: SSD 512GB M.2, Pantalla: LED IPS 14 pulgadas Full HD 1920x1080, GPU: Intel UHD Graphics",
+    "cost": 300,
+    "currency": "USD",
+    "soldCount": 12,
+    "category":"Computadoras",
+    "images":""
+}

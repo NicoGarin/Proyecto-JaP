@@ -1,0 +1,9 @@
+{
+    "name":"Motorola C115",
+    "description":"Indestructible teléfono que te durará hasta el fin de tus días.",
+    "cost":100,
+    "currency":"$",
+    "soldCount":1020,
+    "category": "Celulares",
+    "images": ""
+}

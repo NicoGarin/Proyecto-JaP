@@ -5,7 +5,8 @@
         "cost": 300,
         "currency": "$",
         "imgSrc": "img/herr1.jpg",
-        "soldCount": 44
+        "soldCount": 44,
+        "id":12
     },
     {
         "name": "Amoladora BauKer",
@@ -13,7 +14,8 @@
         "cost": 2500,
         "currency": "$",
         "imgSrc": "img/herr2.jpg",
-        "soldCount": 35
+        "soldCount": 35,
+        "id":13
     },
     {
         "name": "Serrucho Tramontina",
@@ -21,7 +23,8 @@
         "cost": 510,
         "currency": "$",
         "imgSrc": "img/herr3.jpg",
-        "soldCount": 22
+        "soldCount": 22,
+        "id":14
     },
     {
         "name": "Taladro percutor BauKer",
@@ -29,6 +32,7 @@
         "cost": 3000,
         "currency": "$",
         "imgSrc": "img/herr4.jpg",
-        "soldCount": 8
+        "soldCount": 8,
+        "id":15
     }
 ]

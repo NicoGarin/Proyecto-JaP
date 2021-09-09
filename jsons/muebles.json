@@ -5,7 +5,8 @@
         "cost": 7995,
         "currency": "$",
         "imgSrc": "img/mueb1.jpg",
-        "soldCount": 36
+        "soldCount": 36,
+        "id":19
     },
     {
         "name": "Sofá Cayman - 3 cuerpos - Tela Rústica",
@@ -13,7 +14,8 @@
         "cost": 23500,
         "currency": "$",
         "imgSrc": "img/mueb2.jpg",
-        "soldCount": 35
+        "soldCount": 35,
+        "id":20
     },
     {
         "name": "Sommier Regium - 140x190 - 2 Plazas",
@@ -21,6 +23,7 @@
         "cost": 20504,
         "currency": "$",
         "imgSrc": "img/mueb3.jpg",
-        "soldCount": 25
+        "soldCount": 25,
+        "id":21
     }
 ]

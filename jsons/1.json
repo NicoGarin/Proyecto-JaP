@@ -1,0 +1,15 @@
+{
+    "name": "Nokia 1100",
+    "description": "Un clásico! Para jugar a la viborita o utilizar su novedosa linterna.",
+    "cost": 300,
+    "currency": "$",
+    "soldCount": 120,
+    "category": "Celulares",
+    "images": [
+        "img/prod1.jpg",
+        "img/prod1_1.jpg",
+        "img/prod1_2.jpg",
+        "img/prod1_3.jpg",
+        "img/prod1_4.jpg"
+    ]
+}
