@@ -2,12 +2,11 @@ const CATEGORIES_URL = "https://japdevdep.github.io/ecommerce-api/category/all.j
 const PUBLISH_PRODUCT_URL = "https://japdevdep.github.io/ecommerce-api/product/publish.json";
 const CATEGORY_INFO_URL = "https://japdevdep.github.io/ecommerce-api/category/1234.json";
 const PRODUCT_INFO_URL = "https://japdevdep.github.io/ecommerce-api/product/5678.json";
-const PRODUCT_INFO_COMMENTS_URL = "https://japdevdep.github.io/ecommerce-api/product/5678-comments.json";
 const CART_INFO_URL = "https://japdevdep.github.io/ecommerce-api/cart/987.json";
 const CART_BUY_URL = "https://japdevdep.github.io/ecommerce-api/cart/buy.json";
 const USUARIOS_URL = "https://nicolasgarin.github.io/Proyecto-JaP/jsons/usuarios.json";
 //Urls de Jsons de las diferentes categorías
-const AUTOS_URL = "https://japdevdep.github.io/ecommerce-api/product/all.json";
+const AUTOS_URL = "https://nicolasgarin.github.io/Proyecto-JaP/jsons/autos.json";
 const HERRAMIENTAS_URL = "https://nicolasgarin.github.io/Proyecto-JaP/jsons/herramientas.json";
 const DEPORTE_URL ="https://nicolasgarin.github.io/Proyecto-JaP/jsons/deporte.json";
 const VESTIMENTA_URL ="https://nicolasgarin.github.io/Proyecto-JaP/jsons/vestimenta.json";
@@ -49,6 +48,11 @@ var getJSONData = function(url){
         hideSpinner();
         return result;
     });
+}
+
+function verproducto(id) {
+    localStorage.setItem("Producto",JSON.stringify({productId: id}));
+    window.location = "product-info.html";
 }
 
 //Función que se ejecuta una vez que se haya lanzado el evento de

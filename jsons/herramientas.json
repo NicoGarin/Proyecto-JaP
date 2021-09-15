@@ -4,7 +4,7 @@
         "description": "Martillo cabezal de hierro con uña y mango de fibra.",
         "cost": 300,
         "currency": "$",
-        "imgSrc": "img/herr1.jpg",
+        "imgSrc": "img/12.jpg",
         "soldCount": 44,
         "id":12
     },
@@ -13,7 +13,7 @@
         "description": "Kit de amoladora 820 w con 20 discos de 115 mm. Trabador de eje.",
         "cost": 2500,
         "currency": "$",
-        "imgSrc": "img/herr2.jpg",
+        "imgSrc": "img/13.jpg",
         "soldCount": 35,
         "id":13
     },
@@ -22,7 +22,7 @@
         "description": "Con siete dientes por pulgadas y lámina de acero carbono templado y lijado, el serrucho Profesional de Tramontina proporciona mayor precisión en el corte de maderas y seguridad al operador de la herramienta.",
         "cost": 510,
         "currency": "$",
-        "imgSrc": "img/herr3.jpg",
+        "imgSrc": "img/14.jpg",
         "soldCount": 22,
         "id":14
     },
@@ -31,7 +31,7 @@
         "description": "Taladro percutor 900 w 13 mm.",
         "cost": 3000,
         "currency": "$",
-        "imgSrc": "img/herr4.jpg",
+        "imgSrc": "img/15.jpg",
         "soldCount": 8,
         "id":15
     }

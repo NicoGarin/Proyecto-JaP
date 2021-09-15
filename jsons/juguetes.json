@@ -4,7 +4,7 @@
         "description":"Pelota oficial Nike",
         "cost":"320",
         "currency":"$",
-        "imgSrc":"img/jug1.jpg",
+        "imgSrc":"img/16.jpg",
         "soldCount":"22",
         "id":16
         },
@@ -13,7 +13,7 @@
         "description":"Un clásico! Para toda la familia! Por un ratito dejar el Play, el XBox, la tablet, la compu... jugar al aire libre un juego para desarrollar destreza y paciencia...Fabricado en madera maciza.",
         "cost":"290",
         "currency":"$",
-        "imgSrc":"img/jug2.jpg",
+        "imgSrc":"img/17.jpg",
         "soldCount":"66",
         "id":17
         },
@@ -22,7 +22,7 @@
         "description":"Muñeca de trapo grande para niños o niñas",
         "cost":"880",
         "currency":"$",
-        "imgSrc":"img/jug3.jpg",
+        "imgSrc":"img/18.jpg",
         "soldCount":"36",
         "id":18
         }

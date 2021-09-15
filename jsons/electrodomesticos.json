@@ -4,7 +4,7 @@
         "description": "Horno microondas Midea, modelo EM720CXX, de 20 Litros de capacidad. Cuenta con 6 programas para calentar, descongelar o cocinar tu comida rápidamente y 11 niveles de potencia.",
         "cost": 94,
         "currency": "USD",
-        "imgSrc": "img/elec1.jpg",
+        "imgSrc": "img/10.jpg",
         "soldCount": 88,
         "id":10
     },
@@ -13,7 +13,7 @@
         "description": "MODELO J 501 INV INOX: Descongelado y arranque totalmente automático, Congelado libre de escarcha (NO FROST), Sistema de enfriamiento rápido, Caja de vegetales, Estantes de cristal templado antiderrames, Amplio espacio en anaqueles, Gabinetes texturados",
         "cost": 908,
         "currency": "USD",
-        "imgSrc": "img/elec2.jpg",
+        "imgSrc": "img/11.jpg",
         "soldCount": 35,
         "id":11
     }

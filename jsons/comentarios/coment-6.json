@@ -1,0 +1,24 @@
+[{
+    "score": 5,
+    "description": "La mejor notebook que probé",
+    "user": "mariela11",
+    "dateTime": "2020-02-25 18:03:52"
+},
+{
+    "score": 5,
+    "description": "Funciona muy bien",
+    "user": "maria_sanchez",
+    "dateTime": "2020-01-17 13:42:18"
+},
+{
+    "score": 3,
+    "description": "Aceptable",
+    "user": "bolso89",
+    "dateTime": "2020-03-14 09:05:13"
+},
+{
+    "score": 3,
+    "description": "Un espectáculo!",
+    "user": "pablo_gomez",
+    "dateTime": "2020-02-21 15:05:22"
+}]
