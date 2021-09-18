@@ -4,7 +4,7 @@
     "description":"Un clásico! Para jugar a la viborita o utilizar su novedosa linterna.",
     "cost":"300",
     "currency":"$",
-    "imgSrc":"img/cel1.jpg",
+    "imgSrc":"img/1.jpg",
     "soldCount":120,
     "id":1
     },
@@ -13,7 +13,7 @@
     "description":"Indestructible teléfono que te durará hasta el fin de tus días.",
     "cost":"100",
     "currency":"$",
-    "imgSrc":"img/cel2.jpg",
+    "imgSrc":"img/2.jpg",
     "soldCount":1020,
     "id":2
     },
@@ -22,7 +22,7 @@
     "description":"PROCESADOR: Apple A10 - Quad-core, MEMORIA: 128GB, RAM: 2GB RAM, PANTALLA: 4.7",
     "cost":"247",
     "currency":"USD",
-    "imgSrc":"img/cel3.jpg",
+    "imgSrc":"img/3.jpg",
     "soldCount":30,
     "id":3
     },
@@ -31,7 +31,7 @@
     "description":"El Huawei Y8s aparece listado en la página web de Huawei, aunque no hay por el momento información sobre su disponibilidad. Lo que sí se indica es una única versión de 4 + 64 GB y la disponibilidad en dos colores: negro y verde.",
     "cost":"230",
     "currency":"USD",
-    "imgSrc":"img/cel4.jpg",
+    "imgSrc":"img/4.jpg",
     "soldCount":800,
     "id":4
     },
@@ -40,7 +40,7 @@
     "description": "SIMATIC Field PG M6 Advanced; i7-8850H (2.6 a 4.3 GHz; 6 kernels + Hyper-Threading; caché inteligente de 9 MB); Pantalla de 15,6 ; Full HD (1920 x 1080); WLAN 802.11ac y Bluetooth V5.0; DVD +/- RW; UHD Graphics 630; 1x 32 GB DDR4 SD-RAM SO-DIMM",
     "cost": 335,
     "currency": "USD",
-    "imgSrc": "img/comp1.jpg",
+    "imgSrc": "img/5.jpg",
     "soldCount": 7,
     "id":5
     },
@@ -49,7 +49,7 @@
     "description": "Sistema Operativo: Microsoft Windows 10 Home 64bit, Procesador: Intel Core i5-1035G1, Ram: 8GB DDR4, Almacenamiento: SSD 512GB M.2, Pantalla: LED IPS 14 pulgadas Full HD 1920x1080, GPU: Intel UHD Graphics",
     "cost": 300,
     "currency": "USD",
-    "imgSrc": "img/comp2.jpg",
+    "imgSrc": "img/6.jpg",
     "soldCount": 12,
     "id":6
     },
@@ -58,7 +58,7 @@
     "description": "Las ruedas abdominales o AB Wheel suponen una revolución en los ejercicios de abdominales por que activa por completo todo el conjunto abdominal, pero esta grandiosa herramienta no solo sirve para hacer abdominales, ademas trabaja la parte baja de la lumbar para dar una curvatura correcta a la espalda.",
     "cost": 335,
     "currency": "$",
-    "imgSrc": "img/depo1.jpg",
+    "imgSrc": "img/7.jpg",
     "soldCount": 122,
     "id":7
     },
@@ -67,7 +67,7 @@
     "description": "Pelota ideal para mejorar las posturas, el balance y la flexibilidad. Construido en material anti explosión. Adelgaza cadera y muslos.",
     "cost": 475,
     "currency": "$",
-    "imgSrc": "img/depo2.jpg",
+    "imgSrc": "img/8.jpg",
     "soldCount": 35,
     "id":8
     },
@@ -76,7 +76,7 @@
     "description": "Pesas Rusas 8kg Musculación Recubiertas Pesa.",
     "cost": 760,
     "currency": "$",
-    "imgSrc": "img/depo3.jpg",
+    "imgSrc": "img/9.jpg",
     "soldCount": 55,
      "id":9
     },
@@ -85,7 +85,7 @@
     "description": "Horno microondas Midea, modelo EM720CXX, de 20 Litros de capacidad. Cuenta con 6 programas para calentar, descongelar o cocinar tu comida rápidamente y 11 niveles de potencia.",
     "cost": 94,
     "currency": "USD",
-    "imgSrc": "img/elec1.jpg",
+    "imgSrc": "img/10.jpg",
     "soldCount": 88,
     "id":10
     },
@@ -94,7 +94,7 @@
     "description": "MODELO J 501 INV INOX: Descongelado y arranque totalmente automático, Congelado libre de escarcha (NO FROST), Sistema de enfriamiento rápido, Caja de vegetales, Estantes de cristal templado antiderrames, Amplio espacio en anaqueles, Gabinetes texturados",
     "cost": 908,
     "currency": "USD",
-    "imgSrc": "img/elec2.jpg",
+    "imgSrc": "img/11.jpg",
     "soldCount": 35,
     "id":11
     },
@@ -103,7 +103,7 @@
     "description": "Martillo cabezal de hierro con uña y mango de fibra.",
     "cost": 300,
     "currency": "$",
-    "imgSrc": "img/herr1.jpg",
+    "imgSrc": "img/12.jpg",
     "soldCount": 44,
     "id":12
     },
@@ -112,7 +112,7 @@
     "description": "Kit de amoladora 820 w con 20 discos de 115 mm. Trabador de eje.",
     "cost": 2500,
     "currency": "$",
-    "imgSrc": "img/herr2.jpg",
+    "imgSrc": "img/13.jpg",
     "soldCount": 35,
     "id":13
     },
@@ -121,7 +121,7 @@
     "description": "Con siete dientes por pulgadas y lámina de acero carbono templado y lijado, el serrucho Profesional de Tramontina proporciona mayor precisión en el corte de maderas y seguridad al operador de la herramienta.",
     "cost": 510,
     "currency": "$",
-    "imgSrc": "img/herr3.jpg",
+    "imgSrc": "img/14.jpg",
     "soldCount": 22,
     "id":14
     },
@@ -130,7 +130,7 @@
     "description": "Taladro percutor 900 w 13 mm.",
     "cost": 3000,
     "currency": "$",
-    "imgSrc": "img/herr4.jpg",
+    "imgSrc": "img/15.jpg",
     "soldCount": 8,
     "id":15
     },
@@ -139,7 +139,7 @@
     "description":"Pelota oficial Nike",
     "cost":"320",
     "currency":"$",
-    "imgSrc":"img/jug1.jpg",
+    "imgSrc":"img/16.jpg",
     "soldCount":"22",
     "id":16
     },
@@ -148,7 +148,7 @@
     "description":"Un clásico! Para toda la familia! Por un ratito dejar el Play, el XBox, la tablet, la compu... jugar al aire libre un juego para desarrollar destreza y paciencia...Fabricado en madera maciza.",
     "cost":"290",
     "currency":"$",
-    "imgSrc":"img/jug2.jpg",
+    "imgSrc":"img/17.jpg",
     "soldCount":"66",
     "id":17
     },
@@ -157,7 +157,7 @@
     "description":"Muñeca de trapo grande para niños o niñas",
     "cost":"880",
     "currency":"$",
-    "imgSrc":"img/jug3.jpg",
+    "imgSrc":"img/18.jpg",
     "soldCount":"36",
     "id":18
     },
@@ -166,7 +166,7 @@
     "description": "Posee tablero de melamina roble, un material resistente a la humedad y fácil de limpiar. Esta mesa se adapta a todo tipo de necesidades y gustos, desde los fans de lo minimalista hasta las familias que necesitan resistencia y durabilidad.",
     "cost": 7995,
     "currency": "$",
-    "imgSrc": "img/mueb1.jpg",
+    "imgSrc": "img/19.jpg",
     "soldCount": 36,
     "id":19
     },
@@ -175,7 +175,7 @@
     "description": "Tela Standard: microfibra (se limpia con espuma quitamanchas). 10 años de garantía en estructuras y 1 año de garantía en componentes internos.",
     "cost": 23500,
     "currency": "$",
-    "imgSrc": "img/mueb2.jpg",
+    "imgSrc": "img/20.jpg",
     "soldCount": 35,
     "id":20
     },
@@ -184,7 +184,7 @@
     "description": "La elegante línea Regium ofrece gran soporte y bienestar. Este colchón fabricado con capas de espuma Premium otorga alto nivel de confort. Altura del colchón 28 cm.",
     "cost": 20504,
     "currency": "$",
-    "imgSrc": "img/mueb3.jpg",
+    "imgSrc": "img/21.jpg",
     "soldCount": 25,
     "id":21
     },
@@ -193,7 +193,7 @@
     "description": "Ajustado pero con espacio para moverse, el 511™ Slim Fit sigue siendo uno de nuestros clásicos de siempre.",
     "cost": 3790,
     "currency": "$",
-    "imgSrc": "img/vest1.jpg",
+    "imgSrc": "img/22.jpg",
     "soldCount": 56,
     "id":22
     },
@@ -202,7 +202,7 @@
     "description": "Campera en Cuero Porcino (Pecari).",
     "cost": 1990,
     "currency": "$",
-    "imgSrc": "img/vest2.jpg",
+    "imgSrc": "img/23.jpg",
     "soldCount": 90,
     "id":23
     },
@@ -211,7 +211,7 @@
     "description": "Champion New Balance ML574EM2.",
     "cost": 4256,
     "currency": "$",
-    "imgSrc": "img/vest3.jpg",
+    "imgSrc": "img/24.jpg",
     "soldCount": 66,
     "id":24
     },
@@ -220,7 +220,7 @@
     "description": "Generación 2019, variedad de colores. Motor 1.0, ideal para ciudad.",
     "cost": 13500,
     "currency": "USD",
-    "imgSrc": "img/prod1.jpg",
+    "imgSrc": "img/25.jpg",
     "soldCount": 14,
     "id":25
     },
@@ -229,7 +229,7 @@
     "description": "La versión de Fiat que brinda confort y a un precio accesible.",
     "cost": 14500,
     "currency": "USD",
-    "imgSrc": "img/prod2.jpg",
+    "imgSrc": "img/26.jpg",
     "soldCount": 52,
     "id":26
     },
@@ -238,7 +238,7 @@
     "description": "Un auto que se ha ganado la buena fama por su economía con el combustible.",
     "cost": 12500,
     "currency": "USD",
-    "imgSrc": "img/prod3.jpg",
+    "imgSrc": "img/27.jpg",
     "soldCount": 25,
     "id":27
     },
@@ -247,7 +247,7 @@
     "description": "El modelo de auto que se sigue renovando y manteniendo su prestigio en comodidad.",
     "cost": 15200,
     "currency": "USD",
-    "imgSrc": "img/prod4.jpg",
+    "imgSrc": "img/28.jpg",
     "soldCount": 17,
     "id":28
 }

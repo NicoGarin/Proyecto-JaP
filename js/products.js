@@ -81,7 +81,7 @@ function mostrarProductos(array) {
                         </div>
                         <p class="mb-1">` + newarray[i].description + `</p>
                         <h6 class="mb-1">` + newarray[i].currency + ` ` + newarray[i].cost + `</h6>
-                        <br><button onclick="verproducto(${newarray[i].id})">Ver Info</button>
+                        <br><button class="btn btn-dark" onclick="verproducto(${newarray[i].id})">Ver Más</button>
                     </div>
                 </div><hr>
                         ` ;
@@ -120,6 +120,7 @@ function mostrarProductos(array) {
             </div>
             <p class="mb-1">` + newarray[i].description + `</p>
             <h6 class="mb-1">` + newarray[i].currency + ` ` + newarray[i].cost + `</h6>
+            <br><button class="btn btn-dark" onclick="verproducto(${newarray[i].id})">Ver Más</button>
         </div>
         </div><hr>
         ` ;
@@ -156,6 +157,7 @@ function mostrarProductos(array) {
         </div>
         <p class="mb-1">` + newarray[i].description + `</p>
         <h6 class="mb-1">` + newarray[i].currency + ` ` + newarray[i].cost + `</h6>
+        <br><button class="btn btn-dark" onclick="verproducto(${newarray[i].id})">Ver Más</button>
     </div>
     </div><hr>
         ` ;
@@ -201,6 +203,7 @@ function mostrarProductos(array) {
             </div>
             <p class="mb-1">` + newarray[i].description + `</p>
             <h6 class="mb-1">` + newarray[i].currency + ` ` + newarray[i].cost + `</h6>
+            <br><button class="btn btn-dark" onclick="verproducto(${newarray[i].id})">Ver Más</button>
         </div>
         </div><hr>
         ` ;
@@ -239,6 +242,7 @@ function mostrarProductos(array) {
             </div>
             <p class="mb-1">` + newarray[i].description + `</p>
             <h6 class="mb-1">` + newarray[i].currency + ` ` + newarray[i].cost + `</h6>
+            <br><button class="btn btn-dark" onclick="verproducto(${newarray[i].id})">Ver Más</button>
         </div>
         </div><hr>
         ` ;
@@ -275,6 +279,7 @@ function mostrarProductos(array) {
         </div>
         <p class="mb-1">` + newarray[i].description + `</p>
         <h6 class="mb-1">` + newarray[i].currency + ` ` + newarray[i].cost + `</h6>
+        <br><button class="btn btn-dark" onclick="verproducto(${newarray[i].id})">Ver Más</button>
     </div>
     </div><hr>
         ` ;
@@ -314,6 +319,7 @@ function mostrarProductos(array) {
             </div>
             <p class="mb-1">` + array[i].description + `</p>
             <h6 class="mb-1">` + array[i].currency + ` ` + array[i].cost + `</h6>
+            <br><button class="btn btn-dark" onclick="verproducto(${array[i].id})">Ver Más</button>
         </div>
         </div><hr>
         ` ;
@@ -352,6 +358,7 @@ function mostrarProductos(array) {
             </div>
             <p class="mb-1">` + array[i].description + `</p>
             <h6 class="mb-1">` + array[i].currency + ` ` + array[i].cost + `</h6>
+            <br><button class="btn btn-dark" onclick="verproducto(${array[i].id})">Ver Más</button>
         </div>
         </div><hr>
 
@@ -389,6 +396,7 @@ function mostrarProductos(array) {
         </div>
         <p class="mb-1">` + array[i].description + `</p>
         <h6 class="mb-1">` + array[i].currency + ` ` + array[i].cost + `</h6>
+        <br><button class="btn btn-dark" onclick="verproducto(${array[i].id})">Ver Más</button>
     </div>
     </div><hr>
         ` ;
@@ -481,8 +489,18 @@ function categorysetter(option) {
             mostrarProductos(listadoProductos)
         }
         )
-    } else {
+    } else if (option == 9) {
         getJSONData(VESTIMENTA_URL).then(function (objeto) {
+            if (objeto.status === "ok") {
+                listadoProductos = objeto.data;
+            } else {
+                alert(objeto.status);
+            }
+            mostrarProductos(listadoProductos)
+        }
+        )
+    } else {
+        getJSONData(TODOS_URL).then(function (objeto) {
             if (objeto.status === "ok") {
                 listadoProductos = objeto.data;
             } else {

@@ -32,37 +32,54 @@
     <h2>Productos</h2>
     <p class="lead">Verás aquí todos los productos del sitio.</p>
   </div>
-  <div style="margin-left: 12%;">
-    <select id="cats" onchange="categorysetter(this.value)">
-      <option disabled selected>Selecciona una categoría</option>
-      <option value="1">Autos</option>
-      <option value="2">Celulares</option>
-      <option value="3">Computadoras</option>
-      <option value="4">Deporte</option>
-      <option value="5">Electrodomésticos</option>
-      <option value="6">Herramientas</option>
-      <option value="7">Juguetes</option>
-      <option value="8">Muebles</option>
-      <option value="9">Vestimenta</option>
-    </select>
-    <label for="inputmin">Rango de precio:</label>
-    <input id="inputmin" type="text" placeholder="min" maxlength="10">
-    <input id="inputmax" type="text" placeholder="max" maxlength="10">
-    <input id="inputusd" type="radio" value="usd" name="currency">
-    <label for="inputusd">USD</label>
-    <input id="input$" type="radio" value="$" name="currency">
-    <label for="input$">$</label>
-    <input id="inputall" type="radio" value="all" name="currency" checked>
-    <label for="inputall">Todos</label>
-    <button id="rangoprecio">Buscar</button>
-  </div>
   <div class="container">
-    <input id="AZ" type="radio" value="AZ" name="sort" checked>
-    <label for="AZ">AZ</label>
-    <input id="ZA" type="radio" value="ZA" name="sort">
-    <label for="ZA">ZA</label>
-    <input id="sold" type="radio" value="sold" name="sort">
-    <label for="sold">Vendidos</label>
+      <div class="row">
+        <div class="btn-group btn-group-toggle mb-4" data-toggle="buttons">
+          <label for="inputusd" class="btn btn-light">
+            <input id="inputusd" type="radio" value="usd" name="currency">USD
+          </label>
+          <label for="input$" class="btn btn-light">
+            <input id="input$" type="radio" value="$" name="currency">$
+          </label>
+          <label for="inputall" class="btn btn-light active">
+            <input id="inputall" type="radio" value="all" name="currency" checked>Todos
+          </label>
+        </div>
+      <div style="margin-left: 12%;">
+        <select id="cats" onchange="categorysetter(this.value)" style="width: 25%;">
+          <option disabled>Selecciona una categoría</option>
+          <option value="1">Autos</option>
+          <option value="2">Celulares</option>
+          <option value="3">Computadoras</option>
+          <option value="4">Deporte</option>
+          <option value="5">Electrodomésticos</option>
+          <option value="6">Herramientas</option>
+          <option value="7">Juguetes</option>
+          <option value="8">Muebles</option>
+          <option value="9">Vestimenta</option>
+          <option selected value="10">Todos los productos</option>
+        </select>
+        <label for="inputmin">Precio:</label>
+        <input id="inputmin" type="text" placeholder="min" maxlength="10" style="width: 8%;">
+        <input id="inputmax" type="text" placeholder="max" maxlength="10" style="width: 8%;">
+        <button class="btn btn-dark" id="rangoprecio">Buscar</button>
+      </div>
+    </div>
+    </div>
+  <div class="container">
+    <div class="row">
+      <div class="btn-group btn-group-toggle mb-4" data-toggle="buttons">
+        <label for="AZ" class="btn btn-light active">
+          <input id="AZ" type="radio" value="AZ" name="sort" checked>A-Z
+        </label>
+        <label for="ZA" class="btn btn-light">
+          <input id="ZA" type="radio" value="ZA" name="sort">Z-A
+        </label>
+        <label for="sold" class="btn btn-light">
+          <input id="sold" type="radio" value="sold" name="sort"><i class="fas fa-sort-amount-down mr-1"></i>Cant.
+        </label>
+      </div>
+    </div>
   </div>
   <div class="container p-5">
     <div class="row">

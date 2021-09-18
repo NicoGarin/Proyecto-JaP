@@ -15,6 +15,7 @@ const COMPUTADORAS_URL ="https://nicolasgarin.github.io/Proyecto-JaP/jsons/compu
 const ELECTRODOMESTICOS_URL ="https://nicolasgarin.github.io/Proyecto-JaP/jsons/electrodomesticos.json";
 const JUGUETES_URL ="https://nicolasgarin.github.io/Proyecto-JaP/jsons/juguetes.json";
 const CELULARES_URL ="https://nicolasgarin.github.io/Proyecto-JaP/jsons/celulares.json";
+const TODOS_URL = "https://nicolasgarin.github.io/Proyecto-JaP/jsons/todos.json";
 
 
 var showSpinner = function(){
