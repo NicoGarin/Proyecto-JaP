@@ -1,6 +1,3 @@
-//Función que se ejecuta una vez que se haya lanzado el evento de
-//que el documento se encuentra cargado, es decir, se encuentran todos los
-//elementos HTML presentes.
 let preciomin = 0;
 let preciomax = 0;
 let currency = "All";
@@ -8,7 +5,7 @@ let sort = "AZ";
 var listadoProductos = [];
 
 //Código del botón buscar
-document.getElementById("rangoprecio").addEventListener("click", function (e) {
+function actualizarlistado() {
     preciomin = document.getElementById("inputmin").value;  //se establece valor del minimo
     preciomax = document.getElementById("inputmax").value;  //se establece valor del maximo
     if (document.getElementById("input$").checked) {        //se establece en qué moneda se quiere visualizar el listado
@@ -42,7 +39,8 @@ document.getElementById("rangoprecio").addEventListener("click", function (e) {
         preciomax = undefined;
     }
     categorysetter(document.getElementById("cats").value);
-})
+
+}
 
 function mostrarProductos(array) {
     if (currency == "$") {
@@ -516,3 +514,7 @@ function verproducto(id) {
     localStorage.setItem("Producto",JSON.stringify({productId: id}));
     window.location = "product-info.html";
 }
+
+document.addEventListener("DOMContentLoaded", function(e){
+    actualizarlistado();
+})

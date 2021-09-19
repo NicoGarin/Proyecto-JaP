@@ -36,13 +36,13 @@
       <div class="row">
         <div class="btn-group btn-group-toggle mb-4" data-toggle="buttons">
           <label for="inputusd" class="btn btn-light">
-            <input id="inputusd" type="radio" value="usd" name="currency">USD
+            <input id="inputusd" type="radio" value="usd" name="currency" onchange="actualizarlistado()">USD
           </label>
           <label for="input$" class="btn btn-light">
-            <input id="input$" type="radio" value="$" name="currency">$
+            <input id="input$" type="radio" value="$" name="currency" onchange="actualizarlistado()">$
           </label>
           <label for="inputall" class="btn btn-light active">
-            <input id="inputall" type="radio" value="all" name="currency" checked>Todos
+            <input id="inputall" type="radio" value="all" name="currency" checked onchange="actualizarlistado()">Todos
           </label>
         </div>
       <div style="margin-left: 12%;">
@@ -62,7 +62,7 @@
         <label for="inputmin">Precio:</label>
         <input id="inputmin" type="text" placeholder="min" maxlength="10" style="width: 8%;">
         <input id="inputmax" type="text" placeholder="max" maxlength="10" style="width: 8%;">
-        <button class="btn btn-dark" id="rangoprecio">Buscar</button>
+        <button class="btn btn-dark" id="rangoprecio" onclick="actualizarlistado()">Buscar</button>
       </div>
     </div>
     </div>
@@ -70,13 +70,13 @@
     <div class="row">
       <div class="btn-group btn-group-toggle mb-4" data-toggle="buttons">
         <label for="AZ" class="btn btn-light active">
-          <input id="AZ" type="radio" value="AZ" name="sort" checked>A-Z
+          <input id="AZ" type="radio" value="AZ" name="sort" checked onchange="actualizarlistado()">A-Z
         </label>
         <label for="ZA" class="btn btn-light">
-          <input id="ZA" type="radio" value="ZA" name="sort">Z-A
+          <input id="ZA" type="radio" value="ZA" name="sort" onchange="actualizarlistado()">Z-A
         </label>
         <label for="sold" class="btn btn-light">
-          <input id="sold" type="radio" value="sold" name="sort"><i class="fas fa-sort-amount-down mr-1"></i>Cant.
+          <input id="sold" type="radio" value="sold" name="sort" onchange="actualizarlistado()"><i class="fas fa-sort-amount-down mr-1"></i>Cant.
         </label>
       </div>
     </div>
