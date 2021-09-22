@@ -5,5 +5,6 @@
     "currency": "$",
     "soldCount": 122,
     "category":"Deporte",
-    "images":""
+    "images":"",
+    "relatedProducts": [1, 2]
 }

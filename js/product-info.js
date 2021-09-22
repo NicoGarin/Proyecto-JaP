@@ -160,12 +160,16 @@ function mostrarcomentarios(array) {
 
 function enviarcomentario() {
     let nuevocomentario = document.getElementById("comentstring").value;
+    if (nuevocomentario == "") {
+        alert("Debes ingresar un comentario válido")
+    } else {
     username = JSON.parse(localStorage.getItem("User_logueado")).user;
     document.getElementById("newcomentuser").innerHTML = username;
     document.getElementById("newcomentdescription").innerHTML = nuevocomentario;
     starrating();
     document.getElementById("nuevocomentario").style = "display: inline-block";
     document.getElementById("comentstring").value = "";
+    }
 }
 
 function starrating() {
@@ -252,6 +256,12 @@ document.addEventListener("DOMContentLoaded", function(e){
         if (resultObj.status === "ok") {
         arraycomentarios = resultObj.data;
         mostrarcomentarios(arraycomentarios);
+        }
+    });
+    getJSONData("https://nicolasgarin.github.io/Proyecto-JaP/jsons/" + producto.category + ".json")
+    .then(function(resultObj){
+        if (resultObj.status === "ok") {
+        categoryarray = resultObj.data;
         }
     });
 });

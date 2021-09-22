@@ -1,6 +1,18 @@
 [{
     "score": 5,
-    "description": "Escelente máquina",
-    "user": "asdasda",
+    "description": "Excelente máquina",
+    "user": "martin_perez44",
     "dateTime": "2020-02-25 18:03:52"
+},
+{
+    "score": 2,
+    "description": "Se me desmoronó la pared",
+    "user": "el_pelos",
+    "dateTime": "2020-08-13 18:03:52"
+},
+{
+    "score": 4,
+    "description": "Cumple las expectativas",
+    "user": "mandala",
+    "dateTime": "2020-02-28 18:03:52"
 }]

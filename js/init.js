@@ -6,15 +6,15 @@ const CART_INFO_URL = "https://japdevdep.github.io/ecommerce-api/cart/987.json";
 const CART_BUY_URL = "https://japdevdep.github.io/ecommerce-api/cart/buy.json";
 const USUARIOS_URL = "https://nicolasgarin.github.io/Proyecto-JaP/jsons/usuarios.json";
 //Urls de Jsons de las diferentes categorías
-const AUTOS_URL = "https://nicolasgarin.github.io/Proyecto-JaP/jsons/autos.json";
-const HERRAMIENTAS_URL = "https://nicolasgarin.github.io/Proyecto-JaP/jsons/herramientas.json";
-const DEPORTE_URL ="https://nicolasgarin.github.io/Proyecto-JaP/jsons/deporte.json";
-const VESTIMENTA_URL ="https://nicolasgarin.github.io/Proyecto-JaP/jsons/vestimenta.json";
-const MUEBLES_URL ="https://nicolasgarin.github.io/Proyecto-JaP/jsons/muebles.json";
-const COMPUTADORAS_URL ="https://nicolasgarin.github.io/Proyecto-JaP/jsons/computadoras.json";
-const ELECTRODOMESTICOS_URL ="https://nicolasgarin.github.io/Proyecto-JaP/jsons/electrodomesticos.json";
-const JUGUETES_URL ="https://nicolasgarin.github.io/Proyecto-JaP/jsons/juguetes.json";
-const CELULARES_URL ="https://nicolasgarin.github.io/Proyecto-JaP/jsons/celulares.json";
+const AUTOS_URL = "https://nicolasgarin.github.io/Proyecto-JaP/jsons/Autos.json";
+const HERRAMIENTAS_URL = "https://nicolasgarin.github.io/Proyecto-JaP/jsons/Herramientas.json";
+const DEPORTE_URL ="https://nicolasgarin.github.io/Proyecto-JaP/jsons/Deporte.json";
+const VESTIMENTA_URL ="https://nicolasgarin.github.io/Proyecto-JaP/jsons/Vestimenta.json";
+const MUEBLES_URL ="https://nicolasgarin.github.io/Proyecto-JaP/jsons/Muebles.json";
+const COMPUTADORAS_URL ="https://nicolasgarin.github.io/Proyecto-JaP/jsons/Computadoras.json";
+const ELECTRODOMESTICOS_URL ="https://nicolasgarin.github.io/Proyecto-JaP/jsons/Electrodomesticos.json";
+const JUGUETES_URL ="https://nicolasgarin.github.io/Proyecto-JaP/jsons/Juguetes.json";
+const CELULARES_URL ="https://nicolasgarin.github.io/Proyecto-JaP/jsons/Celulares.json";
 const TODOS_URL = "https://nicolasgarin.github.io/Proyecto-JaP/jsons/todos.json";
 
 
@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function(e){
 
   if (user_log) {
     user_loged = JSON.parse(user_log);
-    cuadro_log.innerHTML = "Usuario: " + user_loged.user;
+    cuadro_log.innerHTML = user_loged.user;
     cuadro_log.style = "display: inline-block;color: white;"
     document.getElementById("salir").style = "display: inline-block";         
   }

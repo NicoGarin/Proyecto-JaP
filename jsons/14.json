@@ -5,5 +5,6 @@
     "currency": "$",
     "soldCount": 22,
     "category":"Herramientas",
-    "images":""
+    "images":"",
+    "relatedProducts": [0, 1]
 }

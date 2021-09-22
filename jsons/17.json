@@ -5,5 +5,6 @@
     "currency":"$",
     "soldCount":"66",
     "category":"Juguetes",
-    "images":""
+    "images":"",
+    "relatedProducts": [0, 2]
 }
