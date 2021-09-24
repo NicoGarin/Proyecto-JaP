@@ -25,5 +25,14 @@
         "imgSrc": "img/21.jpg",
         "soldCount": 25,
         "id":21
+    },
+    {
+        "name": "Biblioteca Estantería Abierta Multiuso en MDP 12mm - Negro",
+        "description": "Biblioteca estantería multiuso con 4 estantes amplios que le otorgan facilidad y orden en el día a día. Muy espaciosa para la organización de libros, adornos u objetos varios. Se adapta a cualquier ambiente y está confeccionado en fibras MDP lo que le otorga durabilidad y muy buena resistencia.",
+        "cost": 1470,
+        "currency": "$",
+        "imgSrc": "img/36.jpg",
+        "soldCount": 30,
+        "id":36
     }
 ]

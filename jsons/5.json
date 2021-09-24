@@ -6,5 +6,5 @@
     "soldCount": 7,
     "category":"Computadoras",
     "images":"",
-    "relatedProducts": [1]
+    "relatedProducts": [1, 2, 3]
 }

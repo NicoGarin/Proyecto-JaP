@@ -1,0 +1,10 @@
+{
+    "name":"Perro robot interactivo Robodog habla, baila y juegaPLAJUG0368",
+    "description":"Con su mando en forma de hueso puedes controlar todos sus simpáticos movimientos, hacer que se desplace en cualquier dirección moviendo graciosamente sus patas, que emita simpáticos ladridos o que gire la cabeza mientras pestañea de una forma adorable.",
+    "cost":"120",
+    "currency":"USD",
+    "soldCount": 7,
+    "category":"Juguetes",
+    "images": "",
+    "relatedProducts":[0, 2]
+}

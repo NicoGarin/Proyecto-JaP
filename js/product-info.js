@@ -2,6 +2,8 @@ var producto
 var arraycomentarios
 var username
 var comenrate
+var categoryarray
+var relprod
 
 function mostrarinfo(producto) {
     let imagenes = "";
@@ -240,6 +242,25 @@ function starrating() {
     }
 }
 
+function relatedprod(category,product) {
+    let relaprod = product.relatedProducts;
+    for (let i = 0; i < relaprod.length; i++) {
+    relprod = category[relaprod[i]];
+    let prod = "";
+    prod = `
+            <div class="card">
+                <img class="card-img-top" src="img/${relprod.id}.jpg" alt="Card image cap">
+                <div class="card-body">
+                <h5 class="card-title">${relprod.name}</h5>
+                <p class="card-text">${relprod.description}</p>
+                <button class="btn btn-dark" onclick="verproducto(${relprod.id})">Ver Más</button>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+    `;
+    document.getElementById("prorel").innerHTML += prod;
+    }
+}
 //Función que se ejecuta una vez que se haya lanzado el evento de
 //que el documento se encuentra cargado, es decir, se encuentran todos los
 //elementos HTML presentes.
@@ -249,6 +270,13 @@ document.addEventListener("DOMContentLoaded", function(e){
         if (resultObj.status === "ok") {
         producto = resultObj.data;
         mostrarinfo(producto);
+        getJSONData("https://nicolasgarin.github.io/Proyecto-JaP/jsons/" + producto.category + ".json")
+    .then(function(resultObj){
+        if (resultObj.status === "ok") {
+        categoryarray = resultObj.data;
+        relatedprod(categoryarray,producto);
+        }
+    });
         }
     });
     getJSONData("https://nicolasgarin.github.io/Proyecto-JaP/jsons/comentarios/coment-" + JSON.parse(localStorage.getItem("Producto")).productId + ".json")
@@ -256,12 +284,6 @@ document.addEventListener("DOMContentLoaded", function(e){
         if (resultObj.status === "ok") {
         arraycomentarios = resultObj.data;
         mostrarcomentarios(arraycomentarios);
-        }
-    });
-    getJSONData("https://nicolasgarin.github.io/Proyecto-JaP/jsons/" + producto.category + ".json")
-    .then(function(resultObj){
-        if (resultObj.status === "ok") {
-        categoryarray = resultObj.data;
         }
     });
 });

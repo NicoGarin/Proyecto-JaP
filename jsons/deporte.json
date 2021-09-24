@@ -18,12 +18,21 @@
         "id":8
     },
     {
-        "name": "Pesa rusa 8k",
-        "description": "Pesas Rusas 8kg Musculación Recubiertas Pesa.",
-        "cost": 760,
+        "name": "Soga Crossfit",
+        "description": "Material :100% poliéster, resistentes al desgaste y resistencia durable, alta resistencia a la tracción. Mango con agarre antideslizante ajustado a calor en los dos cabos. Tamaño de la cuerda: 2.8 m largo y 3 cm diámetro.",
+        "cost": 690,
         "currency": "$",
-        "imgSrc": "img/9.jpg",
+        "imgSrc": "img/34.jpg",
+        "soldCount": 30,
+        "id":34
+    },
+    {
+        "name": "Mancuernas con Pesas - 16 Discos 20Kg Totales",
+        "description": "Completo kit de dos mancuernas cromadas de 34cm, con roscas y 4 tuercas para ajustar los discos. Cuentan con mangos de goma antideslizante de 10cm en el centro para un mejor agarre.",
+        "cost": 2190,
+        "currency": "$",
+        "imgSrc": "img/31.jpg",
         "soldCount": 55,
-        "id":9
+        "id":31
     }
 ]

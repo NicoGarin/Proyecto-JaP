@@ -1,0 +1,10 @@
+{
+    "name": "Notebook ASUS Oficial 15.6",
+    "description": "Esta notebook Asus de 15.6 FHD es ideal para acompañarte en tus días de trabajo y estudio. Equipada con Intel Core i5-8250U, 8GB de RAM, 256GB SSD y Windows 10",
+    "cost": 847,
+    "currency": "USD",
+    "soldCount": 15,
+    "category":"Computadoras",
+    "images":"",
+    "relatedProducts": [0, 1]
+}

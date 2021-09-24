@@ -16,5 +16,23 @@
         "imgSrc": "img/11.jpg",
         "soldCount": 35,
         "id":11
+    },
+    {
+        "name": "Lavarropas Inverter GENERAL ELECTRIC 10,2Kg",
+        "description": "avarropas GE con capacidad para 10Kg. Cuenta con 14 programas de lavado incluído el programa night wash ultra silencioso y ECOlavado.",
+        "cost": 657,
+        "currency": "USD",
+        "imgSrc": "img/32.jpg",
+        "soldCount": 20,
+        "id":32
+    },
+    {
+        "name": "Smart TV SAMSUNG 50 Crystal 4K UHD Nuevo Modelo 2021",
+        "description": "Disfrutá del contenido que más te gusta en la mejor calidad de imagen con este smart tv Samsung de 50 con resolución 4K UHD.",
+        "cost": 769,
+        "currency": "USD",
+        "imgSrc": "img/33.jpg",
+        "soldCount": 18,
+        "id":33
     }
 ]

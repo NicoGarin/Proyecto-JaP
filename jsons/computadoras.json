@@ -16,6 +16,23 @@
         "imgSrc": "img/6.jpg",
         "soldCount": 12,
         "id":6
+    },
+    {
+        "name": "Notebook ASUS Oficial 15.6",
+        "description": "Esta notebook Asus de 15.6 FHD es ideal para acompañarte en tus días de trabajo y estudio. Equipada con Intel Core i5-8250U, 8GB de RAM, 256GB SSD y Windows 10",
+        "cost": 847,
+        "currency": "USD",
+        "imgSrc": "img/29.jpg",
+        "soldCount": 15,
+        "id":29
+    },
+    {
+        "name": "Notebook HP Stream Dual Core 4GB Ram",
+        "description": "MODELO: 14-DS0040nr, Microsoft Windows 10 Home en modo S. Procesador AMD A4-9120e Dual-Core 1.5GHz (hasta 2.2 GHz max boost).",
+        "cost": 409,
+        "currency": "USD",
+        "imgSrc": "img/30.jpg",
+        "soldCount": 10,
+        "id":30
     }
-
 ]

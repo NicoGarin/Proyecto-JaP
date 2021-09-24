@@ -6,5 +6,5 @@
     "soldCount": 35,
     "categroy":"Electrodomésticos",
     "images":"",
-    "relatedProducts": [0]
+    "relatedProducts": [0, 2, 3]
 }
