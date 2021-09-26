@@ -1,7 +1,7 @@
 [
     {
         "name": "Microondas Midea",
-        "description": "Horno microondas Midea, modelo EM720CXX, de 20 Litros de capacidad. Cuenta con 6 programas para calentar, descongelar o cocinar tu comida rápidamente y 11 niveles de potencia.",
+        "description": "Horno microondas Midea, modelo EM720CXX, de 20 Litros de capacidad. Cuenta con 6 programas para calentar...",
         "cost": 94,
         "currency": "USD",
         "imgSrc": "img/10.jpg",
@@ -10,7 +10,7 @@
     },
     {
         "name": "Heladera James frío seco Inverter",
-        "description": "MODELO J 501 INV INOX: Descongelado y arranque totalmente automático, Congelado libre de escarcha (NO FROST), Sistema de enfriamiento rápido, Caja de vegetales, Estantes de cristal templado antiderrames, Amplio espacio en anaqueles, Gabinetes texturados",
+        "description": "MODELO J 501 INV INOX: Descongelado y arranque totalmente automático, Congelado libre de escarcha (NO FROST)...",
         "cost": 908,
         "currency": "USD",
         "imgSrc": "img/11.jpg",
@@ -19,7 +19,7 @@
     },
     {
         "name": "Lavarropas Inverter GENERAL ELECTRIC 10,2Kg",
-        "description": "avarropas GE con capacidad para 10Kg. Cuenta con 14 programas de lavado incluído el programa night wash ultra silencioso y ECOlavado.",
+        "description": "avarropas GE con capacidad para 10Kg. Cuenta con 14 programas de lavado incluído el programa night wash...",
         "cost": 657,
         "currency": "USD",
         "imgSrc": "img/32.jpg",
@@ -28,7 +28,7 @@
     },
     {
         "name": "Smart TV SAMSUNG 50 Crystal 4K UHD Nuevo Modelo 2021",
-        "description": "Disfrutá del contenido que más te gusta en la mejor calidad de imagen con este smart tv Samsung de 50 con resolución 4K UHD.",
+        "description": "Disfrutá del contenido que más te gusta en la mejor calidad de imagen con este smart tv Samsung de 50 con...",
         "cost": 769,
         "currency": "USD",
         "imgSrc": "img/33.jpg",
