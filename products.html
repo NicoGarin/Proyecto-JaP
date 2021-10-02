@@ -41,6 +41,7 @@
   </div>
   <div class="container">
       <div class="row">
+        <div class="col">
         <div class="btn-group btn-group-toggle mb-4" data-toggle="buttons">
           <label for="inputusd" class="btn btn-light">
             <input id="inputusd" type="radio" value="usd" name="currency" onchange="actualizarlistado()">USD
@@ -52,8 +53,10 @@
             <input id="inputall" type="radio" value="all" name="currency" checked onchange="actualizarlistado()">Todos
           </label>
         </div> 
+      </div>
+      <div class="col-6">
         <div style="margin-left: 12%;">
-        <select id="cats" onchange="categorysetter(this.value)" style="width: 25%;">
+        <select id="cats" onchange="categorysetter(this.value)" style="width: 40%;">
           <option disabled>Selecciona una categoría</option>
           <option value="1">Autos</option>
           <option value="2">Celulares</option>
@@ -67,14 +70,11 @@
           <option selected value="10">Todos los productos</option>
         </select>
         <label for="inputmin">Precio:</label>
-        <input id="inputmin" type="text" placeholder="min" maxlength="10" style="width: 8%;">
-        <input id="inputmax" type="text" placeholder="max" maxlength="10" style="width: 8%;">
+        <input id="inputmin" type="text" placeholder="min" maxlength="10" style="width: 10%;">
+        <input id="inputmax" type="text" placeholder="max" maxlength="10" style="width: 10%;">
         <button class="btn btn-dark" id="rangoprecio" onclick="actualizarlistado()">Buscar</button>
       </div>
     </div>
-    </div>
-  <div class="container">
-    <div class="row">
       <div class="btn-group btn-group-toggle mb-4" data-toggle="buttons">
         <label for="AZ" class="btn btn-light active">
           <input id="AZ" type="radio" value="AZ" name="sort" checked onchange="actualizarlistado()">A-Z
