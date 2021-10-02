@@ -288,42 +288,6 @@
         "id":36
     },
     {
-        "name": "Mesa de comedor madera y hierro",
-        "description": "Posee tablero de melamina roble, un material resistente a la humedad y fácil de limpiar. Esta mesa...",
-        "cost": 7995,
-        "currency": "$",
-        "imgSrc": "img/19.jpg",
-        "soldCount": 36,
-        "id":19
-    },
-    {
-        "name": "Sofá Cayman - 3 cuerpos - Tela Rústica",
-        "description": "Tela Standard: microfibra (se limpia con espuma quitamanchas). 10 años de garantía en estructuras y...",
-        "cost": 23500,
-        "currency": "$",
-        "imgSrc": "img/20.jpg",
-        "soldCount": 35,
-        "id":20
-    },
-    {
-        "name": "Sommier Regium - 140x190 - 2 Plazas",
-        "description": "La elegante línea Regium ofrece gran soporte y bienestar. Este colchón fabricado con capas de espuma...",
-        "cost": 20504,
-        "currency": "$",
-        "imgSrc": "img/21.jpg",
-        "soldCount": 25,
-        "id":21
-    },
-    {
-        "name": "Biblioteca Estantería Abierta Multiuso en MDP 12mm - Negro",
-        "description": "Biblioteca estantería multiuso con 4 estantes amplios que le otorgan facilidad y orden en el día a día...",
-        "cost": 1470,
-        "currency": "$",
-        "imgSrc": "img/36.jpg",
-        "soldCount": 30,
-        "id":36
-    },
-    {
         "name": "LEVI'S SLIM FIT JEANS ADV",
         "description": "Ajustado pero con espacio para moverse, el 511™ Slim Fit sigue siendo uno de nuestros clásicos de siempre.",
         "cost": 3790,
