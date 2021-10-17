@@ -6,13 +6,13 @@ function mostrarcarrito(array) {
     for (let i = 0; i < array.length; i++) {
         let prodcargado = array[i];
         carrito += `
-        <div class="col-md-6">
+        <div class="col-md-12 col-lg-6">
             <img class="card-img-top" src="${prodcargado.src}" alt="Card image cap">
             <div class="card-body">
             <h5 class="card-title">${prodcargado.name}</h5>
             <div class="col"><p class="card-text">Precio del producto: ${prodcargado.currency} ${prodcargado.unitCost}</p></div>
             <div class="col"><p class="card-text">Cantidad seleccionada: <span id="count${i}">${prodcargado.count}</span> <button onclick="mas(${i})" class="btn btn-success">+</button> <button onclick="menos(${i})" class="btn btn-danger">-</button></p></div>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <p class="card-text"><small class="text-muted"></small></p>
         </div>
         </div>        
         `;
@@ -29,13 +29,15 @@ function mas(index) {
     calculosboleta(prods);
 }
 
-function menos(index) {
+function menos(index) {    
     let prodcount = parseInt(document.getElementById("count" + index).innerHTML);
+    if (prodcount !== 0) {
     prodcount -= 1;
     document.getElementById("count" + index).innerHTML = prodcount;
     prods[index].count -= 1;
     mostrarboleta(prods);
     calculosboleta(prods);
+    }
 }
 
 function conversionusd(array) {
@@ -53,7 +55,20 @@ function mostrarboleta(array) {
         let productoboleta = array[i];
         let prodxcant = productoboleta.unitCost * productoboleta.count;
         boleta += `
-        ${productoboleta.name} X${productoboleta.count} $${productoboleta.unitCost}  $${prodxcant}<br>
+        <div class="row">
+        <div class="col-6">
+        ${productoboleta.name}
+        </div>
+        <div class="col-1 text-center">
+        X${productoboleta.count}
+        </div>
+        <div class="col-2 text-center">
+        $${productoboleta.unitCost}
+        </div>
+        <div class="col-3 text-center">
+        $${prodxcant}
+        </div>
+        </div><hr>
         `;
         document.getElementById("listacompras").innerHTML = boleta;
     }
