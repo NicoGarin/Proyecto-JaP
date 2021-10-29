@@ -75,22 +75,20 @@
       </div>
     </div>
       <div class="btn-group btn-group-toggle mb-4" data-toggle="buttons">
-        <label for="AZ" class="btn btn-light active">
-          <input id="AZ" type="radio" value="AZ" name="sort" checked onchange="actualizarlistado()">A-Z
+        <label for="AZ" class="btn btn-light">
+          <input id="AZ" type="radio" value="AZ" name="sort" onchange="actualizarlistado()">A-Z
         </label>
         <label for="ZA" class="btn btn-light">
           <input id="ZA" type="radio" value="ZA" name="sort" onchange="actualizarlistado()">Z-A
         </label>
-        <label for="sold" class="btn btn-light">
-          <input id="sold" type="radio" value="sold" name="sort" onchange="actualizarlistado()"><i class="fas fa-sort-amount-down mr-1"></i>Cant.
+        <label for="sold" class="btn btn-light active">
+          <input id="sold" type="radio" value="sold" name="sort" checked onchange="actualizarlistado()"><i class="fas fa-sort-amount-down mr-1"></i>Cant.
         </label>
       </div>
     </div>
   </div>
   <div class="container p-5">
-    <div class="row">
-      <div class="list-group" id="prod-list-container">
-      </div>
+    <div class="row" id="prod-list-container" >
     </div>
   </div>
   <footer class="text-muted bg-light">

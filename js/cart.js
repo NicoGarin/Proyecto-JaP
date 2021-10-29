@@ -1,5 +1,7 @@
 var cartprods;
 var prods;
+var sumaparcial;
+var preciofinal;
 
 function mostrarcarrito(array) {
     let carrito = "";
@@ -27,16 +29,18 @@ function mas(index) {
     prods[index].count += 1;
     mostrarboleta(prods);
     calculosboleta(prods);
+    calculoenvio();
 }
 
 function menos(index) {    
     let prodcount = parseInt(document.getElementById("count" + index).innerHTML);
-    if (prodcount !== 0) {
+    if (prodcount !== 1) {
     prodcount -= 1;
     document.getElementById("count" + index).innerHTML = prodcount;
     prods[index].count -= 1;
     mostrarboleta(prods);
     calculosboleta(prods);
+    calculoenvio();
     }
 }
 
@@ -63,10 +67,10 @@ function mostrarboleta(array) {
         X${productoboleta.count}
         </div>
         <div class="col-2 text-center">
-        $${productoboleta.unitCost}
+        <span class="currency">$</span>${productoboleta.unitCost}
         </div>
         <div class="col-3 text-center">
-        $${prodxcant}
+        <span class="currency">$</span>${prodxcant}
         </div>
         </div><hr>
         `;
@@ -76,17 +80,48 @@ function mostrarboleta(array) {
 
 function calculosboleta(array) {
     let subtotal = "";
-    let sumaparcial = 0;
+    sumaparcial = 0;
     for (let i = 0; i < array.length; i++) {
         let prodxcant = array[i].unitCost * array[i].count;
         sumaparcial += prodxcant;
     }
     subtotal = `
-    Subtotal = $${sumaparcial}
+    Subtotal = <span class="currency">$</span>${sumaparcial}
     `;
     document.getElementById("subtotalcompras").innerHTML = subtotal;
 }
 
+function calculoenvio() {
+    let coefenvio;
+    let opciones = document.getElementsByName("tipoenvio");
+    for (let i = 0; i < opciones.length; i++) {
+        if (opciones[i].checked) {
+            coefenvio = opciones[i].value;
+        }
+    }
+    preciofinal = parseInt(sumaparcial * coefenvio);
+    document.getElementById("preciofinal").innerHTML = preciofinal;
+}
+
+function moneda() {
+    if (document.getElementById("preciousd").checked) {
+        for (let i = 0; i < prods.length; i++) {
+                prods[i].unitCost /= 40;
+        }
+        let monedas = document.getElementsByClassName("currency");
+            for (let i = 0; i < monedas.length; i++) {
+                monedas[i].innerHTML = "USD";
+            }
+    }
+    if (document.getElementById("precio$").checked) {
+        for (let i = 0; i < prods.length; i++) {
+                prods[i].unitCost *= 40;  
+        }
+    }
+    mostrarboleta(prods);
+    calculosboleta(prods);
+    calculoenvio(prods);
+}
 
 //Función que se ejecuta una vez que se haya lanzado el evento de
 //que el documento se encuentra cargado, es decir, se encuentran todos los
@@ -101,6 +136,7 @@ document.addEventListener("DOMContentLoaded", function(e){
         conversionusd(prods);
         mostrarboleta(prods);
         calculosboleta(prods);
+        calculoenvio()
         };
     });
 });

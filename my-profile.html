@@ -29,14 +29,14 @@
     }
   </style>
   <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/styles.css" rel="stylesheet">
   <link href="css/dropzone.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
 </head>
 
 <body>
   <nav class="site-header sticky-top py-1 bg-dark">
     <div class="container d-flex flex-column flex-md-row justify-content-between">
-      <a class="py-2 d-none d-md-inline-block" href="index.html">Inicio</a>
+      <a class="py-2 d-none d-md-inline-block" href="homepage.html">Inicio</a>
       <a class="py-2 d-none d-md-inline-block" href="categories.html">Categorías</a>
       <a class="py-2 d-none d-md-inline-block" href="products.html">Productos</a>
       <a class="py-2 d-none d-md-inline-block" href="sell.html">Vender</a>
@@ -51,17 +51,152 @@
       </div>
     </div>
   </nav>
-  <div class="container p-5">
-    <div class="alert alert-danger" role="alert" style="position: relative; width:auto; top: 0;">
-      <h4 class="alert-heading">¡A trabajar! :)</h4>
-      <p>Esta sección corresponde a: Entrega 6 (Fecha de entrega: 31/10/2021).</p>
-      <hr>
-      <p class="mb-0">Para saber qué debes hacer, fijate en la actividad en CREA correspondiente a esta entrega.</p>
-    </div>
+
+  <div class="row text-center p-4">
+    <div class="col">
+    <h2>Mi Perfil</h2>
+    <p class="lead">Verás aquí todos los datos de tu perfil.</p>
   </div>
+  </div>
+
+<div class="container">
+<div class="row">
+    <div class="card card-body">
+
+    <div class="row justify-content-between">
+      <div class="col-lg-4 col-md-5 col-sm-6">
+      <h3>Datos personales</h3>
+      </div><br><br>
+      <div class="col-lg-2 col-md-4 col-sm-6">
+        <button type="button" class="btn btn-info btn-md btn-block" id="cambiosbtn" onclick="modifdatos()">Editar perfil</button>
+      </div>
+    </div>
+
+      <br>
+
+    <div class="row">
+      <div id="bloque1" class="col-lg-8 col-md-12 col-sm-12">
+      
+      <div class="row">
+      <div class="col-5">
+        Nombre de usuario:
+      </div>
+      <div class="col">
+        <span id="nombreusuario"></span>
+      </div>
+      </div>
+      
+      <br>
+
+      <div class="row">
+      <div class="col-5">
+        Nombres: 
+      </div>
+      <div class="col">
+        <span class="datosusuario" id="name_span" ></span><input class="inputusuario" id="name" type="text" size="25" value="">
+      </div>
+      </div>
+      
+      <br>
+
+      <div class="row">
+      <div class="col-5">
+        Apellidos: 
+      </div>
+      <div class="col">
+        <span class="datosusuario" id="surname_span"></span><input class="inputusuario" id="surname" size="25" type="text" value="">
+      </div>
+      </div>
+      
+      <br>
+
+      <div class="row">
+      <div class="col-5">
+        Edad: <span class="datosusuario">
+      </div>
+      <div class="col">
+        <span class="datosusuario" id="age_span"></span><input class="inputusuario" id="age" type="text" size="2" value="">
+      </div>
+      </div>
+      
+      <br>
+
+      <div class="row">
+      <div class="col-5">
+        Email: 
+      </div>
+      <div class="col-7">
+        <span class="datosusuario" id="mail_span"></span><input class="inputusuario" size="25" id="mail" type="text" value="">
+      </div>
+      </div>
+      
+      <br>
+
+      <div class="row">
+      <div class="col-5">
+        Teléfono de contacto: 
+      </div>
+      <div class="col">
+        <span class="datosusuario" id="phone_span"></span><input class="inputusuario" id="phone" type="text" size="13" value="">
+      </div>
+      </div>
+      <br>
+      </div>
+      <div id="bloque2">
+      <div class="card card-body" id="selectorimg">
+        <div class="row">
+          <div class="col-12">
+            <h5>Imagen de perfil</h5>
+          </div>
+          <br><br>
+          <div class="col-12">
+            <p>Ingresa la <a style="color: rgb(129, 58, 180);font-weight: bolder;" data-toggle="popover" title="¿No tienes URL de una imagen?" data-placement="top" data-content="Sube la foto que quieras y consigue su URL en este <a href=https://imgbb.com/upload target=_blank>enlace</a>">URL</a> de una foto</p>
+          </div>
+          <div class="col-12">
+            <input id="urlfoto" type="text">
+          </div>
+          <br><br>
+          <div class="col-12">
+            <button class="btn btn-info" onclick="guardarimg()" >Guardar foto</button>
+          </div>
+          <br><br>
+          <div class="col-12">
+            <p>ó selecciona un avatar</p>
+          </div>
+          <div class="col-4">
+            <button class="btn">
+              <img src="img/avatar1.jpg" onclick="avatar1()" width="100%">
+            </button>
+          </div>
+          <div class="col-4">
+            <button class="btn">
+              <img src="img/avatar2.jpg" onclick="avatar2()" width="100%">
+            </button>
+          </div>
+          <div class="col-4">
+            <button class="btn">
+              <img src="img/avatar3.jpg" onclick="avatar3()" width="100%">
+            </button>
+          </div>
+        </div>
+
+      </div><br>
+      </div>
+      <div id="bloque3" class="col-lg-3 col-md-6">
+      <div class="card card-body">
+      <img id="imgperfil" width="100%" src="img/avatar0.jpg">
+      </div>
+    </div>
+    </div>
+    
+    </div>
+</div>
+</div>
+
+<br>
   <footer class="text-muted bg-light">
     <div class="container">
-      <p>Este sitio forma parte de Desarrollo Web - JAP - 2020</p>
+      <p>Este sitio forma parte de Desarrollo Web - JAP - 2021</p>
       <p>Clickea <a target="_blank" href="Letra.pdf">aquí</a> para descargar la letra del obligatorio.</p>
     </div>
   </footer>

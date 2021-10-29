@@ -157,3 +157,23 @@ a.custom-card:hover {
 .checked {
   color: orange;
 }
+
+.datosusuario {
+  display: block;
+}
+
+.inputusuario {
+  display: none;
+}
+
+#selectorimg {
+  display: none;
+}
+
+.tarjeta {
+  background-color: rgb(218, 218, 250);
+}
+
+.imagen {
+  border-radius: 5%;
+}

@@ -62,7 +62,6 @@ function verproducto(id) {
 document.addEventListener("DOMContentLoaded", function(e){
   let user_log = localStorage.getItem("User_logueado");
   let cuadro_log = document.getElementById("Userlogged");
-  let user = document.getElementById("username");
 
   if (user_log) {
     user_loged = JSON.parse(user_log);

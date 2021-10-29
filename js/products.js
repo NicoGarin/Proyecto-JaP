@@ -68,20 +68,18 @@ function mostrarProductos(array) {
                     ((preciomax == undefined) || (preciomax != undefined && newarray[i].cost <= preciomax))) {
 
                     row = ` 
-                <div class="row">
-                    <div class="col-3">
-                        <img src="` + newarray[i].imgSrc + `" alt="` + newarray[i].description + `" class="img-thumbnail">
-                    </div>
-                    <div class="col">
-                        <div class="d-flex w-100 justify-content-between">
-                            <h4 class="mb-1">`+ newarray[i].name + `</h4>
-                            <small class="text-muted">` + newarray[i].soldCount + ` artículos</small>
-                        </div>
-                        <p class="mb-1">` + newarray[i].description + `</p>
-                        <h6 class="mb-1">` + newarray[i].currency + ` ` + newarray[i].cost + `</h6>
-                        <br><button class="btn btn-dark" onclick="verproducto(${newarray[i].id})">Ver Más</button>
-                    </div>
-                </div><hr>
+                
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card card-body mb-3 tarjeta shadow">
+                <img class="card-img-top" src="${newarray[i].imgSrc}" alt="${newarray[i].description}">
+                <div class="card-body">
+                <h5 class="card-title">${newarray[i].name}</h5>
+                <div class="col"><p class="card-text">Precio: <strong>${newarray[i].currency} ${newarray[i].cost}</strong></p></div>
+                <br><button class="btn btn-dark" onclick="verproducto(${newarray[i].id})">Ver Más</button>
+                <p class="card-text"><small class="text-muted"> ${newarray[i].soldCount} artículos</small></p>
+                </div>    
+                </div>
+                </div><br>
                         ` ;
                     document.getElementById("prod-list-container").innerHTML += row;
                 }
@@ -107,21 +105,18 @@ function mostrarProductos(array) {
                     ((preciomax == undefined) || (preciomax != undefined && newarray[i].cost <= preciomax))) {
 
                     row = ` 
-        <div class="row">
-        <div class="col-3">
-            <img src="` + newarray[i].imgSrc + `" alt="` + newarray[i].description + `" class="img-thumbnail">
-        </div>
-        <div class="col">
-            <div class="d-flex w-100 justify-content-between">
-                <h4 class="mb-1">`+ newarray[i].name + `</h4>
-                <small class="text-muted">` + newarray[i].soldCount + ` artículos</small>
-            </div>
-            <p class="mb-1">` + newarray[i].description + `</p>
-            <h6 class="mb-1">` + newarray[i].currency + ` ` + newarray[i].cost + `</h6>
-            <br><button class="btn btn-dark" onclick="verproducto(${newarray[i].id})">Ver Más</button>
-        </div>
-        </div><hr>
-        ` ;
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card card-body mb-3 tarjeta shadow">
+                    <img class="card-img-top" src="${newarray[i].imgSrc}" alt="${newarray[i].description}">
+                    <div class="card-body">
+                    <h5 class="card-title">${newarray[i].name}</h5>
+                    <div class="col"><p class="card-text">Precio: <strong>${newarray[i].currency} ${newarray[i].cost}</strong></p></div>
+                    <br><button class="btn btn-dark" onclick="verproducto(${newarray[i].id})">Ver Más</button>
+                    <p class="card-text"><small class="text-muted"> ${newarray[i].soldCount} artículos</small></p>
+                    </div>    
+                    </div>
+                    </div><br><br>
+            ` ;
                     document.getElementById("prod-list-container").innerHTML += row;
                 }
             }
@@ -144,21 +139,18 @@ function mostrarProductos(array) {
                     ((preciomax == undefined) || (preciomax != undefined && newarray[i].cost <= preciomax))) {
 
                     row = ` 
-    <div class="row">
-    <div class="col-3">
-        <img src="` + newarray[i].imgSrc + `" alt="` + newarray[i].description + `" class="img-thumbnail">
-    </div>
-    <div class="col">
-        <div class="d-flex w-100 justify-content-between">
-            <h4 class="mb-1">`+ newarray[i].name + `</h4>
-            <small class="text-muted">` + newarray[i].soldCount + ` artículos</small>
-        </div>
-        <p class="mb-1">` + newarray[i].description + `</p>
-        <h6 class="mb-1">` + newarray[i].currency + ` ` + newarray[i].cost + `</h6>
-        <br><button class="btn btn-dark" onclick="verproducto(${newarray[i].id})">Ver Más</button>
-    </div>
-    </div><hr>
-        ` ;
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card card-body mb-3 tarjeta shadow">
+                    <img class="card-img-top" src="${newarray[i].imgSrc}" alt="${newarray[i].description}">
+                    <div class="card-body">
+                    <h5 class="card-title">${newarray[i].name}</h5>
+                    <div class="col"><p class="card-text">Precio: <strong>${newarray[i].currency} ${newarray[i].cost}</strong></p></div>
+                    <br><button class="btn btn-dark" onclick="verproducto(${newarray[i].id})">Ver Más</button>
+                    <p class="card-text"><small class="text-muted"> ${newarray[i].soldCount} artículos</small></p>
+                    </div>    
+                    </div>
+                    </div><br><br>
+            ` ;
                     document.getElementById("prod-list-container").innerHTML += row;
                 }
 
@@ -190,21 +182,18 @@ function mostrarProductos(array) {
                     ((preciomax == undefined) || (preciomax != undefined && newarray[i].cost <= preciomax))) {
 
                     row = ` 
-        <div class="row">
-        <div class="col-3">
-            <img src="` + newarray[i].imgSrc + `" alt="` + newarray[i].description + `" class="img-thumbnail">
-        </div>
-        <div class="col">
-            <div class="d-flex w-100 justify-content-between">
-                <h4 class="mb-1">`+ newarray[i].name + `</h4>
-                <small class="text-muted">` + newarray[i].soldCount + ` artículos</small>
-            </div>
-            <p class="mb-1">` + newarray[i].description + `</p>
-            <h6 class="mb-1">` + newarray[i].currency + ` ` + newarray[i].cost + `</h6>
-            <br><button class="btn btn-dark" onclick="verproducto(${newarray[i].id})">Ver Más</button>
-        </div>
-        </div><hr>
-        ` ;
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card card-body mb-3 tarjeta shadow">
+                    <img class="card-img-top" src="${newarray[i].imgSrc}" alt="${newarray[i].description}">
+                    <div class="card-body">
+                    <h5 class="card-title">${newarray[i].name}</h5>
+                    <div class="col"><p class="card-text">Precio: <strong>${newarray[i].currency} ${newarray[i].cost}</strong></p></div>
+                    <br><button class="btn btn-dark" onclick="verproducto(${newarray[i].id})">Ver Más</button>
+                    <p class="card-text"><small class="text-muted"> ${newarray[i].soldCount} artículos</small></p>
+                    </div>    
+                    </div>
+                    </div><br><br>
+            ` ;
                     document.getElementById("prod-list-container").innerHTML += row;
                 }
 
@@ -229,21 +218,18 @@ function mostrarProductos(array) {
                     ((preciomax == undefined) || (preciomax != undefined && newarray[i].cost <= preciomax))) {
 
                     row = ` 
-        <div class="row">
-        <div class="col-3">
-            <img src="` + newarray[i].imgSrc + `" alt="` + newarray[i].description + `" class="img-thumbnail">
-        </div>
-        <div class="col">
-            <div class="d-flex w-100 justify-content-between">
-                <h4 class="mb-1">`+ newarray[i].name + `</h4>
-                <small class="text-muted">` + newarray[i].soldCount + ` artículos</small>
-            </div>
-            <p class="mb-1">` + newarray[i].description + `</p>
-            <h6 class="mb-1">` + newarray[i].currency + ` ` + newarray[i].cost + `</h6>
-            <br><button class="btn btn-dark" onclick="verproducto(${newarray[i].id})">Ver Más</button>
-        </div>
-        </div><hr>
-        ` ;
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card card-body mb-3 tarjeta shadow">
+                    <img class="card-img-top" src="${newarray[i].imgSrc}" alt="${newarray[i].description}">
+                    <div class="card-body">
+                    <h5 class="card-title">${newarray[i].name}</h5>
+                    <div class="col"><p class="card-text">Precio: <strong>${newarray[i].currency} ${newarray[i].cost}</strong></p></div>
+                    <br><button class="btn btn-dark" onclick="verproducto(${newarray[i].id})">Ver Más</button>
+                    <p class="card-text"><small class="text-muted"> ${newarray[i].soldCount} artículos</small></p>
+                    </div>    
+                    </div>
+                    </div><br><br>
+            ` ;
                     document.getElementById("prod-list-container").innerHTML += row;
                 }
             }
@@ -266,21 +252,18 @@ function mostrarProductos(array) {
                     ((preciomax == undefined) || (preciomax != undefined && newarray[i].cost <= preciomax))) {
 
                     row = ` 
-    <div class="row">
-    <div class="col-3">
-        <img src="` + newarray[i].imgSrc + `" alt="` + newarray[i].description + `" class="img-thumbnail">
-    </div>
-    <div class="col">
-        <div class="d-flex w-100 justify-content-between">
-            <h4 class="mb-1">`+ newarray[i].name + `</h4>
-            <small class="text-muted">` + newarray[i].soldCount + ` artículos</small>
-        </div>
-        <p class="mb-1">` + newarray[i].description + `</p>
-        <h6 class="mb-1">` + newarray[i].currency + ` ` + newarray[i].cost + `</h6>
-        <br><button class="btn btn-dark" onclick="verproducto(${newarray[i].id})">Ver Más</button>
-    </div>
-    </div><hr>
-        ` ;
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card card-body mb-3 tarjeta shadow">
+                    <img class="card-img-top" src="${newarray[i].imgSrc}" alt="${newarray[i].description}">
+                    <div class="card-body">
+                    <h5 class="card-title">${newarray[i].name}</h5>
+                    <div class="col"><p class="card-text">Precio: ${newarray[i].currency} ${newarray[i].cost}</strong></p></div>
+                    <br><button class="btn btn-dark" onclick="verproducto(${newarray[i].id})">Ver Más</button>
+                    <p class="card-text"><small class="text-muted"> ${newarray[i].soldCount} artículos</small></p>
+                    </div>    
+                    </div>
+                    </div><br><br>
+            ` ;
                     document.getElementById("prod-list-container").innerHTML += row;
                 }
 
@@ -306,21 +289,18 @@ function mostrarProductos(array) {
                     ((preciomax == undefined) || (preciomax != undefined && array[i].cost <= preciomax))) {
 
                     row = ` 
-        <div class="row">
-        <div class="col-3">
-            <img src="` + array[i].imgSrc + `" alt="` + array[i].description + `" class="img-thumbnail">
-        </div>
-        <div class="col">
-            <div class="d-flex w-100 justify-content-between">
-                <h4 class="mb-1">`+ array[i].name + `</h4>
-                <small class="text-muted">` + array[i].soldCount + ` artículos</small>
-            </div>
-            <p class="mb-1">` + array[i].description + `</p>
-            <h6 class="mb-1">` + array[i].currency + ` ` + array[i].cost + `</h6>
-            <br><button class="btn btn-dark" onclick="verproducto(${array[i].id})">Ver Más</button>
-        </div>
-        </div><hr>
-        ` ;
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card card-body mb-3 tarjeta shadow">
+                    <img class="card-img-top imagen" src="${array[i].imgSrc}" alt="${array[i].description}">
+                    <div class="card-body">
+                    <h5 class="card-title">${array[i].name}</h5>
+                    <div class="col"><p class="card-text">Precio: <strong>${array[i].currency} ${array[i].cost}</strong></p></div>
+                    <br><button class="btn btn-dark" onclick="verproducto(${array[i].id})">Ver Más</button>
+                    <p class="card-text"><small class="text-muted"> ${array[i].soldCount} artículos</small></p>
+                    </div>    
+                    </div>
+                    </div>
+            ` ;
                     document.getElementById("prod-list-container").innerHTML += row;
                 }
 
@@ -345,20 +325,17 @@ function mostrarProductos(array) {
                     ((preciomax == undefined) || (preciomax != undefined && array[i].cost <= preciomax))) {
 
                     row = ` 
-        <div class="row">
-        <div class="col-3">
-            <img src="` + array[i].imgSrc + `" alt="` + array[i].description + `" class="img-thumbnail">
-        </div>
-        <div class="col">
-            <div class="d-flex w-100 justify-content-between">
-                <h4 class="mb-1">`+ array[i].name + `</h4>
-                <small class="text-muted">` + array[i].soldCount + ` artículos</small>
-            </div>
-            <p class="mb-1">` + array[i].description + `</p>
-            <h6 class="mb-1">` + array[i].currency + ` ` + array[i].cost + `</h6>
-            <br><button class="btn btn-dark" onclick="verproducto(${array[i].id})">Ver Más</button>
-        </div>
-        </div><hr>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card card-body mb-3 tarjeta shadow">
+                    <img class="card-img-top" src="${array[i].imgSrc}" alt="${array[i].description}">
+                    <div class="card-body">
+                    <h5 class="card-title">${array[i].name}</h5>
+                    <div class="col"><p class="card-text">Precio: <strong>${array[i].currency} ${array[i].cost}</strong></p></div>
+                    <br><button class="btn btn-dark" onclick="verproducto(${array[i].id})">Ver Más</button>
+                    <p class="card-text"><small class="text-muted"> ${array[i].soldCount} artículos</small></p>
+                    </div>    
+                    </div>
+                    </div><br><br>
 
             ` ;
                     document.getElementById("prod-list-container").innerHTML += row;
@@ -383,20 +360,17 @@ function mostrarProductos(array) {
                     ((preciomax == undefined) || (preciomax != undefined && array[i].cost <= preciomax))) {
 
                     row = ` 
-    <div class="row">
-    <div class="col-3">
-        <img src="` + array[i].imgSrc + `" alt="` + array[i].description + `" class="img-thumbnail">
-    </div>
-    <div class="col">
-        <div class="d-flex w-100 justify-content-between">
-            <h4 class="mb-1">`+ array[i].name + `</h4>
-            <small class="text-muted">` + array[i].soldCount + ` artículos</small>
-        </div>
-        <p class="mb-1">` + array[i].description + `</p>
-        <h6 class="mb-1">` + array[i].currency + ` ` + array[i].cost + `</h6>
-        <br><button class="btn btn-dark" onclick="verproducto(${array[i].id})">Ver Más</button>
-    </div>
-    </div><hr>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card card-body mb-3 tarjeta shadow">
+                    <img class="card-img-top" src="${array[i].imgSrc}" alt="${array[i].description}">
+                    <div class="card-body">
+                    <h5 class="card-title">${array[i].name}</h5>
+                    <div class="col"><p class="card-text">Precio: <strong>${array[i].currency} ${array[i].cost}</strong></p></div>
+                    <br><button class="btn btn-dark" onclick="verproducto(${array[i].id})">Ver Más</button>
+                    <p class="card-text"><small class="text-muted"> ${array[i].soldCount} artículos</small></p>
+                    </div>    
+                    </div>
+                    </div><br><br>
         ` ;
                     document.getElementById("prod-list-container").innerHTML += row;
                 }
