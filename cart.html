@@ -58,20 +58,22 @@
   </div>
   </div>
   <div class="row">
-    <div class="col-sm-12 col-md-6 col-lg-8">
+    <div class="col-sm-12 col-md-4 col-lg-6">
       <div class="row mx-3" id="carritoprod">
       </div>
       </div>
-      <div class="col-sm-12 col-md-6 col-lg-4">
+      <div class="col-sm-12 col-md-8 col-lg-6">
       
-      <div class="col" style="background-color: rgb(255, 175, 175);">
+      <div class="col card card" style="background-color: rgb(252, 209, 209);">
       <br>
         <h5 class="text-center">Detalle de compra</h5><br>
-        <div class="row">
-          <div class="col-8 text-center">
+        
+        <!--Sección para seleccionar moneda de pago en proceso-->
+        <div class="row justify-content-center" style="display: none;">
+          <div class="col-5 text-center card-body">
             Selecciona moneda de pago
           </div>
-          <div class="col-4 text-center">
+          <div class="col-2 text-center">
             <div class="btn-group btn-group-toggle mb-4" data-toggle="buttons">
               <label for="precio$" class="btn btn-light active">
                 <input id="precio$" type="radio" value="$" name="monedadepago" checked onchange="moneda()">$
@@ -82,179 +84,240 @@
             </div>
           </div>
         </div>
-      <div class="row">
-        <div class="col-6 text-center">
+        
+
+      <b><div class="row">
+        <div class="col-5 text-center card-body">
           Nombre artículo
         </div>
-        <div class="col-1">
+        <div class="col-2 card-body">
           Cant
         </div>
-        <div class="col-2 text-center">
+        <div class="col-2 text-center card-body">
           P unit
         </div>
-        <div class="col-3 text-center">
+        <div class="col-3 text-center card-body">
           P final
         </div>
-      </div><hr>
+      </div></b><hr>
       <div id="listacompras"></div>
-      <div id="subtotalcompras"></div>
+      <div id="subtotalcompras" class="row justify-content-between card-body"></div><br>
       </div>
-    <div class="col" style="background-color: rgb(203, 212, 253);">
+      
+    <div class="col card-body" style="background-color: rgb(203, 212, 253);">
       <br>
       <h5 class="text-center">Métodos de envío</h5><br>
 
-      <div class="input-group mb-3">
+      <div class="row">
+      <div class="col-10 input-group mb-3">
         <div class="input-group-prepend">
-          <span class="input-group-text" id="direccion">Dirección</span>
+          <span class="input-group-text">Dirección</span>
         </div>
-        <input type="text" class="form-control" placeholder="Calle, número, esquina" aria-label="Username" aria-describedby="basic-addon1">
+        <input id="direccion" type="text" class="form-control" placeholder="Calle, número, esquina" aria-label="Username" aria-describedby="basic-addon1">
       </div>
-      <div class="input-group mb-3">
+    </div>
+    <div class="row">
+      <div class="col-5 input-group mb-3">
         <div class="input-group-prepend">
-          <span class="input-group-text" id="pais">País</span>
+          <span class="input-group-text">País</span>
         </div>
-        <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
+        <input id="pais" type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
       </div>
-      <h6>Tipo de envío</h6>
+    </div>
+      <h6 class="text-center">Tipo de envío</h6><br>
 
       <div class="row">     
-        <div class="col-sm-4 col-md-12">
+        <div class="col-sm-4 col-md-12 col-lg-4 text-center">
           <input type="radio" id="envioop1" name="tipoenvio" value="1.15" checked onchange="calculoenvio()">
           <label for="envioop1">Premium (2-5 días) Costo del 15% sobre el subtotal.</label>
       </div>
-      <div class="col-sm-4 col-md-12">
+      <div class="col-sm-4 col-md-12 col-lg-4 text-center">
         <input type="radio" id="envioop2" name="tipoenvio" value="1.07" onchange="calculoenvio()">
         <label for="envioop2">Express (5-8 días) Costo del 7% sobre el subtotal.</label>      
       </div>
-      <div class="col-sm-4 col-md-12">
+      <div class="col-sm-12 col-md-12 col-lg-4 text-center">
         <input type="radio" id="envioop3" name="tipoenvio" value="1.05" onchange="calculoenvio()">
         <label for="envioop3">Standard (12-15 días) Costo del 5% sobre el subtotal.</label>      
       </div>
     </div>
-    <div class="col">
-      <p>Precio final de la compra: <span class="currency">$</span> <span id="preciofinal"></span></p>
     </div>
-    <br>
-    <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#mediosdepago" aria-expanded="false" aria-controls="mediosdepago">Ver medios de pago</button>
-    </div>
+
+    <div class="col card-body" style="background-color: rgb(235, 218, 250);">
+      <div class="row">
+        <div class="col text-center" style="font-weight: bolder;">Resumen de compra</div>
+      </div><br>
+      <div class="row">
+        <div class="col">Cantidad de productos a enviar</div>
+        <div class="col-3 text-center" id="prodaenviar">0</div>
+      </div>
+
+      <div class="row">
+        <div class="col">Tiempo estimado de entrega</div>
+        <div class="col-3 text-center" id="tiempoentrega">0</div>
+      </div>
+
+      <div class="row">
+        <div class="col">Costo de envío</div>
+        <div class="col-3 text-center" id="costoenvio">0</div>
+      </div>
+
+      <div class="row">
+        <div class="col">Subtotal</div>
+        <div class="col-3 text-center" id="subtotalfinal">0</div>
+      </div>
+
+      <div class="row" style="font-weight: bolder;">
+        <div class="col">Precio final</div>
+        <div class="col-3 text-center" id="precio_final">0</div>
+      </div><br>
+
+      <div class="row">
+        <div class="col"><button type="button" class="btn btn-info btn-block"  data-toggle="modal" data-target="#mediosdepagoModal">Seleccionar medio de pago</button></div>
+      </div>
+    </div>   
   </div>
 </div>
 
-<div class="row">
-  <div class="col">
-    <br>
-    <div class="collapse" id="mediosdepago">
-      <div class="card card-body">
-        <h3 class="text-center">Medios de pago</h3><br>
-
-        <div class="row justify-content-around">
-        <div class="col-4">
-          <button class="btn btn-info btn-lg btn-block" type="button" data-toggle="collapse" data-target="#tarjeta" aria-expanded="false" aria-controls="tarjeta">Tarjeta</button>
-        </div>
-        <div class="col-4">
-          <button class="btn btn-info btn-lg btn-block" type="button" data-toggle="collapse" data-target="#transferencia" aria-expanded="false" aria-controls="transferencia">Transferencia</button>
-        </div>
+<div class="modal fade" id="mediosdepagoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Medios de pago</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
       </div>
 
-        <div class="row">
-          <div class="col">
-            <div class="collapse multi-collapse" id="tarjeta">
-              <div class="card card-body">
-                <h4>Datos de la tarjeta</h4><br>
-                <div class="row justify-content-around">
-                <div class="col-md-6 col-sm-12 col-lg-4">
-                  <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text" id="nombre">Nombre</span>
-                    </div>
-                    <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
-                  </div>
-                  </div>
-                  <div class="col-md-6 col-sm-12 col-lg-4">
+      <div class="modal-body">
+        <div class="row justify-content-around">
+          <div class="btn-group btn-group-toggle" data-toggle="buttons"></div>
+          <div class="col-5">
+            <label class="btn btn-info btn-block">
+              <input type="radio" name="options" id="option1" autocomplete="off" checked onchange="mediodepago()"> Tarjeta
+            </label>
+          </div>
+          <div class="col-5">
+            <label class="btn btn-info btn-block">
+              <input type="radio" name="options" id="option2" autocomplete="off" onchange="mediodepago()"> Transferencia
+            </label>
+          </div>
+        </div><br>
+        <form class="needs-validation" novalidate>
+
+          <div class="row" id="tarjeta">
+            <div class="col">
+                <div class="card card-body">
+                  <h4>Datos de la tarjeta</h4><br>
+                  <div class="row justify-content-around">
+                  <div class="col-md-12 col-sm-12 col-lg-4">
                     <div class="input-group mb-3">
                       <div class="input-group-prepend">
-                        <span class="input-group-text" id="apellido">Apellido</span>
+                        <span class="input-group-text" id="nombre">Nombre</span>
                       </div>
-                      <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
-                    </div>
-                  </div>
-                </div>
-        
-                
-                <div class="row justify-content-around">
-                <div class="col-md-4 col-sm-12">
-                <div class="input-group mb-3">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text" id="email">@</span>
-                  </div>
-                  <input type="text" class="form-control" placeholder="Email" aria-label="Username" aria-describedby="basic-addon1">
-                </div>
-              </div>
-              <div class="col-md-4 col-sm-12">
-                <div class="input-group mb-3">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text" id="sello">Sello</span>
-                  </div>
-                  <input type="text" class="form-control" placeholder="Mastercard, Visa" aria-label="Username" aria-describedby="basic-addon1">
-                </div>
-              </div>
-            </div>
-        
-            <div class="row justify-content-around">
-              <div class="col-lg-6 col-md-12 col-sm-12">
-                <div class="input-group mb-3">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text" id="tarjeta">Número de tarjeta</span>
-                  </div>
-                  <input type="text"  class="form-control" placeholder="XXXX-XXXX-XXX-XXX" aria-label="Username" aria-describedby="basic-addon1">
-                </div>
-              </div>
-              <div class="col-md-3 col-sm-6 col-lg-3">
-                <div class="input-group mb-3">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text" id="codigo">Código de seguridad</span>
-                  </div>
-                  <input type="text"  class="form-control" placeholder="XXX" aria-label="Username" aria-describedby="basic-addon1">
-                </div>
-              </div>
-              <div class="col-md-3 col-sm-6 col-lg-3">
-                <div class="input-group mb-3">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text" id="expiracion">Fecha de expiración</span>
-                  </div>
-                  <input type="text"  class="form-control" placeholder="MM/AAAA" aria-label="Username" aria-describedby="basic-addon1">
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <button type="button" class="btn btn-success btn-lg btn-block">Confirmar pago</button>
-            </div>
-          </div>
+                      <input type="text" class="form-control inputstarjeta" id="nombretarjeta" required>
+                      <div class="invalid-feedback">
+                        Debes ingresar tu nombre
                       </div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col">
-              <div class="collapse multi-collapse" id="transferencia">
-                <div class="card card-body">
-                  <div class="col md-6">
-                    <div class="card card-body text-center">
-                      <h4>Datos para depósito bancario</h4>
-                      <p>Cuenta Dólares BBVA</p>
-                      <p>N° cuenta: 112-1100045-000222</p>
-                      <p>Código SWIFT: 12254226652</p>
-                      <p>Código IBAN: 544545</p>
-                    <div class="col">
-                      <button type="button" class="btn btn-success btn-lg btn-block">Confirmar pago</button>
                     </div>
+                    </div>
+                    <div class="col-md-12 col-sm-12 col-lg-4">
+                      <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="apellido">Apellido</span>
+                        </div>
+                        <input type="text" class="form-control inputstarjeta" placeholder="" aria-label="Username" aria-describedby="basic-addon1" required>
+                        <div class="invalid-feedback">
+                          Debes ingresar tu apellido
+                        </div>  
+                      </div>
                     </div>
                   </div>
-               </div>
+                           
+                  <div class="row justify-content-around">
+                  <div class="col-lg-4 col-md-12 col-sm-12">
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="email">@</span>
+                    </div>
+                    <input type="text" class="form-control inputstarjeta" placeholder="Email" aria-label="Username" aria-describedby="basic-addon1" required>
+                    <div class="invalid-feedback">
+                      Debes ingresar un mail válido
+                    </div>
+
+                  </div>
+                </div>
+                <div class="col-md-12 col-lg-4 col-sm-12">
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="sello">Sello</span>
+                    </div>
+                    <input type="text" class="form-control inputstarjeta" placeholder="Mastercard, Visa" aria-label="Username" aria-describedby="basic-addon1" required>
+                    <div class="invalid-feedback">
+                      Debes ingresar un sello
+                    </div>
+                  </div>
+                </div>
+              </div>
+          
+              <div class="row justify-content-around">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="tarjeta">Número de tarjeta</span>
+                    </div>
+                    <input type="number"  class="form-control inputstarjeta" placeholder="XXXX-XXXX-XXX-XXX" aria-label="Username" aria-describedby="basic-addon1" minlength="14" maxlength="14" required>
+                    <div class="invalid-feedback">
+                      Ingresa el número de tarjeta
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-lg-4">
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="codigo">CSV</span>
+                    </div>
+                    <input type="number"  class="form-control inputstarjeta" placeholder="XXX" aria-label="Username" aria-describedby="basic-addon1" minlength="3" maxlength="3" required>
+                    <div class="invalid-feedback">
+                      Ingresa el código de seguridad
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-lg-4">
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="expiracion">Expiración</span>
+                    </div>
+                    <input type="text"  class="form-control inputstarjeta" placeholder="MM/AAAA" aria-label="Username" aria-describedby="basic-addon1" required>
+                    <div class="invalid-feedback">
+                      Ingresa fecha de expiración
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             </div>
-
+            </div>
+  
+            <div class="row" id="transferencia" style="display: none;">
+              <div class="col">
+                    <div class="col md-6">
+                      <div class="card card-body text-center">
+                        <h4>Datos para depósito bancario</h4>
+                        <p>N° de cuenta bancaria</p>
+                        <input type="number"  class="form-control inputtransfer" placeholder="" id="numcuenta"  aria-label="Username" aria-describedby="basic-addon1" minlength="6"> 
+                        <div class="invalid-feedback">
+                          Ingresa número de cuenta bancaria
+                        </div>    
+                        <br>
+                      </div>
+                    </div>
+              </div>
+              </div>
+              <br>
+              <div class="col">
+                <button type="submit" class="btn btn-success btn-lg btn-block">Confirmar pago</button>
+              </div>
+            </form>
 
       </div>
     </div>
