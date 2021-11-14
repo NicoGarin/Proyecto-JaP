@@ -3,11 +3,10 @@ var prods;
 var sumaparcial;
 var preciofinal;
 let tarjeta = true;
+var env = 1;
+var valorusd = 40;
 
-$('#myModal').on('shown.bs.modal', function () {
-    $('#myInput').trigger('focus')
-  })
-
+//Muestra productos cargados en formato de carta
 function mostrarcarrito(array) {
     let carrito = "";
     for (let i = 0; i < array.length; i++) {
@@ -61,11 +60,25 @@ function conversionusd(array) {
     for (let i = 0; i < array.length; i++) {
         let productoboleta = array[i];
         if (productoboleta.currency == "USD") {
-            productoboleta.unitCost *= 40;  
+            productoboleta.unitCost *= valorusd;  
         }
     }
 }
 
+function conversion$(array) {
+    for (let i = 0; i < array.length; i++) {
+        let productoboleta = array[i];
+        if (productoboleta.currency == "USD") {
+            productoboleta.unitCost /= valorusd;  
+        }
+    }
+}
+
+function borrarprod(indice) {
+    
+}
+
+//Muestra lista de productos
 function mostrarboleta(array) {
     let boleta = "";
     for (let i = 0; i < array.length; i++) {
@@ -91,6 +104,7 @@ function mostrarboleta(array) {
     }
 }
 
+//Calcula subtotal
 function calculosboleta(array) {
     let subtotal = "";
     sumaparcial = 0;
@@ -105,6 +119,7 @@ function calculosboleta(array) {
     document.getElementById("subtotalcompras").innerHTML = subtotal;
 }
 
+//Calcula costo de envío
 function calculoenvio() {
     let coefenvio;
     let opciones = document.getElementsByName("tipoenvio");
@@ -117,6 +132,7 @@ function calculoenvio() {
     resumen();
 }
 
+//Selector de medio de pago dentro del modal
 function mediodepago() {
     if (document.getElementById("option1").checked) {
         document.getElementById("tarjeta").style.display = "block";
@@ -161,6 +177,7 @@ function moneda() {
     }
 }
 
+//Función que calcula y muestra el resumen final de la compra
 function resumen() {
     //Cantidad de productos
     let cantidad = 0;
@@ -169,11 +186,12 @@ function resumen() {
     }
     document.getElementById("prodaenviar").innerHTML = cantidad;
     //Tiempo de entrega
-    if (document.getElementById("envioop3").checked) {
+    let op = document.getElementsByName("tipoenvio");
+    if (op[0].checked) {
         document.getElementById("tiempoentrega").innerHTML = "2 - 5 Días";
-    } if (document.getElementById("envioop2").checked) {
+    } if (op[1].checked) {
         document.getElementById("tiempoentrega").innerHTML = "5 - 8 Días";
-    } else {
+    } if (op[2].checked) {
         document.getElementById("tiempoentrega").innerHTML = "12 - 15 Días";
     }
     //Costo de envío
@@ -192,6 +210,25 @@ function resumen() {
     document.getElementById("precio_final").innerHTML = "$ " + preciofinal;
 }
 
+//Cambia estilos si los campos están vacíos
+function invalidenvio() {
+    let inpdireccion = document.getElementById("direccion");
+    if (inpdireccion.value == "") {
+        inpdireccion.style.backgroundColor = "rgb(252, 212, 212)";
+    } else {
+        inpdireccion.style.backgroundColor = "white";
+    }
+    let inppais = document.getElementById("pais");
+    if (inppais.value == "") {
+        inppais.style.backgroundColor = "rgb(252, 212, 212)";
+    } else {
+        inppais.style.backgroundColor = "white";
+
+    }
+
+}
+
+//Validación campos de envío
 function validenvio() {
     flag = true;
     let inpdireccion = document.getElementById("direccion").value;
@@ -203,8 +240,9 @@ function validenvio() {
         flag = false;
     }
     return flag;
-}
+}     
 
+//Validación para medio de pago tarjeta
 function validtarjeta() {
     if (tarjeta == true) {
         let numtarj = document.getElementById("numcuenta");
@@ -216,6 +254,7 @@ function validtarjeta() {
     }
 }
 
+//Validación para medio de pago cuenta
 function validtransfer() {
     if (tarjeta == false) {
         let inptarj = document.getElementsByClassName("inputstarjeta");
@@ -227,20 +266,50 @@ function validtransfer() {
     }
 }
 
-// Example starter JavaScript for disabling form submissions if there are invalid fields
+//Función que dispara el alert al finalizar la compra
+function alertmediodepago() {
+    document.getElementById("alert").innerHTML = `
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <strong>¡Alto ahí!</strong>   Hay campos del método de envío sin completar.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    `
+}
+
+//Alert para cuando la compra se finalizó con éxito
+function alertexito() {
+    document.getElementById("alert2").innerHTML = `
+    <div id="myAlert" class="alert alert-success alert-dismissible fade show" role="alert">
+        <strong>¡Felicitaciones!</strong> Has completado tu compra con éxito.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    `
+}
+
+//Validaciones
 (function () {
     'use strict'
   
-    // Fetch all the forms we want to apply custom Bootstrap validation styles to
     var forms = document.querySelectorAll('.needs-validation')
   
-    // Loop over them and prevent submission
     Array.prototype.slice.call(forms)
       .forEach(function (form) {
         form.addEventListener('submit', function (event) {
-          if (!form.checkValidity() || !validenvio()) {
             event.preventDefault()
             event.stopPropagation()
+          if (!form.checkValidity() || !validenvio()) {
+              invalidenvio()
+            
+          }
+          if (!validenvio()) {
+              alertmediodepago()
+          }
+          if (validenvio() && form.checkValidity()){
+              alertexito()
           }
   
           form.classList.add('was-validated')

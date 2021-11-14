@@ -64,7 +64,7 @@
       </div>
       <div class="col-sm-12 col-md-8 col-lg-6">
       
-      <div class="col card card" style="background-color: rgb(252, 209, 209);">
+      <div class="col card card" style="background-color: rgb(235, 218, 250);">
       <br>
         <h5 class="text-center">Detalle de compra</h5><br>
         
@@ -129,15 +129,15 @@
       <div class="row">     
         <div class="col-sm-4 col-md-12 col-lg-4 text-center">
           <input type="radio" id="envioop1" name="tipoenvio" value="1.15" checked onchange="calculoenvio()">
-          <label for="envioop1">Premium (2-5 días) Costo del 15% sobre el subtotal.</label>
+          <label for="envioop1">Premium: Costo del 15% sobre el subtotal.</label>
       </div>
       <div class="col-sm-4 col-md-12 col-lg-4 text-center">
         <input type="radio" id="envioop2" name="tipoenvio" value="1.07" onchange="calculoenvio()">
-        <label for="envioop2">Express (5-8 días) Costo del 7% sobre el subtotal.</label>      
+        <label for="envioop2">Express: Costo del 7% sobre el subtotal.</label>      
       </div>
       <div class="col-sm-12 col-md-12 col-lg-4 text-center">
         <input type="radio" id="envioop3" name="tipoenvio" value="1.05" onchange="calculoenvio()">
-        <label for="envioop3">Standard (12-15 días) Costo del 5% sobre el subtotal.</label>      
+        <label for="envioop3">Standard: Costo del 5% sobre el subtotal.</label>      
       </div>
     </div>
     </div>
@@ -178,6 +178,8 @@
   </div>
 </div>
 
+
+<!--Código del modal-->
 <div class="modal fade" id="mediosdepagoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-lg">
     <div class="modal-content">
@@ -317,12 +319,17 @@
               <div class="col">
                 <button type="submit" class="btn btn-success btn-lg btn-block">Confirmar pago</button>
               </div>
+              <div id="alert"></div>
+              <div id="alert2"></div>
             </form>
-
       </div>
     </div>
   </div>
 </div>
+
+<!--Código del alert cuando se finaliza la compra-->
+<div id="alert"></div>
+
 
 <footer class="text-muted bg-light">
   <div class="container">
